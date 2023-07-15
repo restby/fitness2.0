@@ -1,11 +1,31 @@
 // Colors
-// ---------------------------------
+// Text
+$text-dark: #102654;
+$text-light: #FFFFFF;
+$text-action: #103AAE;
+$text-action-gradient: linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
+$text-form: #FFFFFF;
+$text-error: #FF121F;
+
+// Icons
+$icon-light: #FFFFFF;
+$icon-dark: #102654;
+
+// Buttons/Links
+$stroke-light: #FFFFFF;
+$stroke-dark: #102654;
+$fill-gradient: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
 
 // Default
-
 $color-default-black: #000000;
-$color-default-white: #ffffff;
 $color-transparent: rgba(255, 255, 255, 0);
+$color-default-white: #ffffff;
+$color-grey: #F8F9FC;
+$color-red: #ED0233;
+$color-dark: #102654;
+$color-darker: #030A1A;
+$color-gradient: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
