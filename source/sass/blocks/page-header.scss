@@ -1,0 +1,47 @@
+.page-header {
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+  padding-top: 30px;
+  padding-bottom: 51px;
+
+  @include vp-1365 {
+    background: conic-gradient(from 155deg at 20.70% 35.74%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+    padding-top: 40px;
+    padding-bottom: 82px;
+  }
+
+  @include vp-767 {
+    background: conic-gradient(from 167deg at 35.31% 34.22%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+    padding-top: 15px;
+    padding-bottom: 78px;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-header__tel {
+  color: $text-light;
+  font-family: $ff-alumniSans;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.78px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+    margin-bottom: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    margin-bottom: 80px;
+  }
+}
