@@ -1303,12 +1303,18 @@ button,
 .logo {
   color: #FFFFFF;
   font-family: "AlumniSans", "Arial", sans-serif;
-  font-size: 36px;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0.72px;
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: 600;
+  line-height: normal;
+}
+.logo--header {
+  font-size: 36px;
+  letter-spacing: 0.72px;
+}
+.logo--footer {
+  font-size: 26px;
+  letter-spacing: 0.52px;
 }
 @media (max-width: 1365px) {
   .logo {
@@ -1520,6 +1526,85 @@ button,
     -ms-grid-column-span: 2;
     grid-area: 3/1/4/3;
   }
+}
+
+.page-footer {
+  background-color: #030A1A;
+  padding-top: 41px;
+  padding-bottom: 32px;
+}
+@media (max-width: 1365px) {
+  .page-footer {
+    padding-top: 42px;
+    padding-bottom: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .page-footer {
+    padding-top: 50px;
+    padding-bottom: 52px;
+  }
+}
+
+.page-footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.nav__link {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .nav__link {
+    font-size: 16px;
+  }
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 11px;
+     -moz-column-gap: 11px;
+          column-gap: 11px;
+}
+
+.social__link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
 /* @mixin hover-focus {

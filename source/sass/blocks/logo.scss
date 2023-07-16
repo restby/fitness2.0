@@ -1,12 +1,20 @@
 .logo {
   color: $text-light;
   font-family: $ff-alumniSans;
-  font-size: 36px;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0.72px;
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: 600;
+  line-height: normal;
+
+  &--header {
+    font-size: 36px;
+    letter-spacing: 0.72px;
+  }
+
+  &--footer {
+    font-size: 26px;
+    letter-spacing: 0.52px;
+  }
 
   @include vp-1365 {
     font-size: 24px;
