@@ -16,21 +16,21 @@
 
 .page-footer__wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 
   // @include vp-767 {
   // }
 }
 
-// .page-fooetr__logo {
-//   @include vp-767 {}
+// .page-footer__logo {
+//   // @include vp-767 {}
 // }
 
 // .page-fooetr__nav {
-//   @include vp-767 {}
+//   // @include vp-767 {}
 // }
 
 // .page-fooetr__social-list {
-//   @include vp-767 {}
+//   // @include vp-767 {}
 // }
