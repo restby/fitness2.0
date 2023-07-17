@@ -6,7 +6,11 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 30px;
+  column-gap: 40px;
+
+  @include vp-1365 {
+    column-gap: 30px;
+  }
 
   @include vp-767 {
     display: grid;
@@ -14,10 +18,41 @@
     grid-template-rows: repeat(3, auto);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    margin-bottom: 40px;
   }
 }
 
-// .nav__iten {}
+.nav__item {
+  &--services {
+    @include vp-767 {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+  }
+
+  &--subs {
+    @include vp-767 {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+  }
+
+  &--actions {
+    @include vp-767 {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+  }
+
+  &--trainers {
+    @include vp-767 {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+  }
+
+  &--schedule {
+    @include vp-767 {
+      grid-area: 3 / 2 / 4 / 3;
+    }
+  }
+}
 
 .nav__link {
   color: $text-light;

@@ -25,14 +25,16 @@
       <header class="page-header">
         <div class="container">
           <div class="page-header__wrapper">
-            <a class="page-header__logo logo logo--header">SUPERGYM</a>
+            <a class="page-header__logo logo logo--header">
+              <img src="img/svg/logo.svg" width="122" height="44" alt="Логотип фитнес центра SUPERGYM">
+            </a>
             <a class="page-header__tel" href="tel:88005555555">8-800-555-55-55</a>
           </div>
           <section class="hero">
             <div class="hero__wrapper">
               <div class="hero__col hero__col--left">
                 <span class="hero__text">омск</span>
-                <h1 class="hero__title">ФИТНЕС ЦЕНТР
+                <h1 class="hero__title">Фитнес центр
                 </h1>
                 <ul class="hero__list">
                   <li class="hero__item">Тренажёрный зал
@@ -43,7 +45,15 @@
                 <button class="hero__btn btn" type="button">Купить абонемент</button>
               </div>
               <div class="hero__col hero__col--right">
-                <img src="img/hero-desktop.jpg" alt="">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1365px)"
+                  srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x"> -->
+                  <!-- <source type="image/webp" media="(min-width: 767px)"
+                  srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x"> -->
+                  <source media="(min-width: 1365px)" srcset="img/hero-desktop.jpg 1x, img/hero-desktop@2x.jpg 2x">
+                  <img src="img/hero-tablet.jpg" width="324" height="390" srcset="img/hero-tablet@2x.jpg 2x"
+                    alt="изображение спортсмена">
+                </picture>
               </div>
             </div>
           </section>
@@ -55,35 +65,37 @@
       <footer class="page-footer">
         <div class="container">
           <div class="page-footer__wrapper">
-            <a class="page-footer__logo logo logo--footer">SUPERGYM</a>
+            <a class="page-footer__logo logo logo--footer">
+              <img src="img/svg/logo.svg" width="88" height="32" alt="Логотип фитнес центра SUPERGYM">
+            </a>
             <nav class="page-fooetr__nav nav">
               <ul class="nav__list">
-                <li class="nav__iten">
-                  <a class="nav__link" href="">Услуги</a>
+                <li class="nav__item nav__item--services">
+                  <a class="nav__link nav__link--services" href="">Услуги</a>
                 </li>
-                <li class="nav__iten">
-                  <a class="nav__link" href="">Абонементы</a>
+                <li class="nav__item nav__item--subs">
+                  <a class="nav__link nav__link--subs" href="">Абонементы</a>
                 </li>
-                <li class="nav__iten">
-                  <a class="nav__link" href="">Акции</a>
+                <li class="nav__item nav__item--actions">
+                  <a class="nav__link nav__link--actions" href="">Акции</a>
                 </li>
-                <li class="nav__iten">
-                  <a class="nav__link" href="">Тренеры</a>
+                <li class="nav__item nav__item--trainers">
+                  <a class="nav__link nav__link--trainers" href="">Тренеры</a>
                 </li>
-                <li class="nav__iten">
-                  <a class="nav__link" href="">Расписание</a>
+                <li class="nav__item nav__item--schedule">
+                  <a class="nav__link nav__link--schedule" href="">Расписание</a>
                 </li>
               </ul>
             </nav>
             <ul class="page-fooetr__social-list social">
               <li class="social__item">
-                <a class="social__link" href=""></a>
+                <a class="social__link" href="#"></a>
               </li>
               <li class="social__item">
-                <a class="social__link" href=""></a>
+                <a class="social__link" href="#"></a>
               </li>
               <li class="social__item">
-                <a class="social__link" href=""></a>
+                <a class="social__link" href="#"></a>
               </li>
             </ul>
           </div>
