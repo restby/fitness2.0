@@ -1556,6 +1556,21 @@ button,
       -ms-flex-align: center;
           align-items: center;
 }
+.page-footer__link {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+.page-footer__link:not(:last-of-type) {
+  margin-right: 30px;
+}
+@media (max-width: 767px) {
+  .page-footer__link {
+    font-size: 16px;
+  }
+}
 
 .nav__list {
   margin: 0;
