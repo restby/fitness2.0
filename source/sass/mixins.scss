@@ -52,6 +52,12 @@
   }
 }
 
+@mixin vp-520-767 {
+  @media (min-width: 520px) and (max-width: ($vp-768 - 1px)) {
+    @content;
+  }
+}
+
 @mixin vp-319 {
   @media (max-width: ($vp-320 - 1px)) {
     @content;
