@@ -61,9 +61,9 @@
       </header>
       <main>
         <section class="gym">
-          <div class="container">
-            <div class="gym__wrapper">
-              <div class="gym__col">
+          <div class="gym__wrapper">
+            <div class="gym__row">
+              <div class="gym__col gym__col--left">
                 <h2 class="gym__title">Тренажерный зал</h2>
                 <p class="gym__descr">Просторный зал площадью 900 кв/м</p>
                 <p class="gym__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
@@ -73,32 +73,39 @@
                   Также в фитнес центре есть несколько
                   оборудованных залов для различных видов групповых занятий.</p>
               </div>
-              <div class="gym__col">
-                <img src="" alt="">
-                <div class="gym__video-wrapper">
-                  <a class="gym__video-preview" href="https://www.youtube.com/embed/9TZXsZItgdw">
-                    <!-- <iframe class="gym__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe> -->
-                    <picture>
-                      <!-- <source type="image/webp" media="(min-width: 1365px)"
-                                      srcset="img/video-preview-desktop.webp 1x, img/video-preview-desktop@2x.webp 2x"> -->
-                      <!-- <source type="image/webp" media="(min-width: 767px)"
-                                      srcset="img/video-preview-tablet.webp 1x, img/video-preview-tablet@2x.webp 2x"> -->
-                      <!-- <source type="image/webp"
-                                      srcset="img/video-preview-mobile.webp 1x, img/video-preview-mobile@2x.webp 2x"> -->
-                      <source media="(min-width: 1365px)"
-                        srcset="img/video-preview-desktop.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
-                      <source media="(min-width: 767px)"
-                        srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
-                      <img src="img/video-preview-mobile.jpg" width="324" height="390"
-                        srcset="img/video-preview-mobile@2x.jpg 2x" alt="Бесплатные интерактивные онлайн-курсы">
-                    </picture>
-                  </a>
-                  <button class="gym__btn" type="button"></button>
-                </div>
+              <div class="gym__col gym__col--right">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1365px)" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x"> -->
+                  <!-- <source type="image/webp" media="(min-width: 767px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x"> -->
+                  <!-- <source type="image/webp" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x"> -->
+                  <source media="(min-width: 1365px)" srcset="img/gym-desktop.jpg 1x, img/gym-desktop@2x.jpg 2x">
+                  <source media="(min-width: 767px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
+                  <img src="img/gym-mobile.jpg" width="324" height="390" srcset="img/gym-mobile@2x.jpg 2x"
+                    alt="Бесплатные интерактивные онлайн-курсы">
+                </picture>
               </div>
+            </div>
+            <div class="gym__video">
+              <div class="video">
+                <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
+                  <picture>
+                    <source media="(min-width: 1365px)"
+                      srcset="img/video-preview-desktop.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
+                    <source media="(min-width: 767px)"
+                      srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
+                    <img src="img/video-preview-mobile.jpg" width="320" height="167"
+                      srcset="img/video-preview-mobile@2x.jpg 2x" alt="Бесплатные интерактивные онлайн-курсы">
+                  </picture>
+                </a>
+                <button class="video__btn" aria-label="Запусутить видео"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="subs">
+          <div class="container">
+            <div class="subs__wrapper">
+              <h2 class="subs__title">Абонементы</h2>
             </div>
           </div>
         </section>
