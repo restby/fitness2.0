@@ -75,7 +75,29 @@
               </div>
               <div class="gym__col">
                 <img src="" alt="">
-                <div class="gym__video"></div>
+                <div class="gym__video-wrapper">
+                  <a class="gym__video-preview" href="https://www.youtube.com/embed/9TZXsZItgdw">
+                    <!-- <iframe class="gym__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe> -->
+                    <picture>
+                      <!-- <source type="image/webp" media="(min-width: 1365px)"
+                                      srcset="img/video-preview-desktop.webp 1x, img/video-preview-desktop@2x.webp 2x"> -->
+                      <!-- <source type="image/webp" media="(min-width: 767px)"
+                                      srcset="img/video-preview-tablet.webp 1x, img/video-preview-tablet@2x.webp 2x"> -->
+                      <!-- <source type="image/webp"
+                                      srcset="img/video-preview-mobile.webp 1x, img/video-preview-mobile@2x.webp 2x"> -->
+                      <source media="(min-width: 1365px)"
+                        srcset="img/video-preview-desktop.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
+                      <source media="(min-width: 767px)"
+                        srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
+                      <img src="img/video-preview-mobile.jpg" width="324" height="390"
+                        srcset="img/video-preview-mobile@2x.jpg 2x" alt="Бесплатные интерактивные онлайн-курсы">
+                    </picture>
+                  </a>
+                  <button class="gym__btn" type="button"></button>
+                </div>
               </div>
             </div>
           </div>
