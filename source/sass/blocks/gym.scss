@@ -68,11 +68,14 @@
   @include vp-1365 {
     width: 678px;
     height: 345px;
+    margin: 0 auto;
   }
 
   @include vp-767 {
-    width: 320px;
-    height: 313px;
+    max-width: 100%;
+    height: auto;
+    // width: 320px;
+    // height: 313px;
   }
 }
 

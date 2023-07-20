@@ -1677,12 +1677,13 @@ button,
   .gym__col--right img {
     width: 678px;
     height: 345px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
   .gym__col--right img {
-    width: 320px;
-    height: 313px;
+    max-width: 100%;
+    height: auto;
   }
 }
 
