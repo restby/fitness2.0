@@ -51,8 +51,8 @@
                   <!-- <source type="image/webp" media="(min-width: 767px)"
                   srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x"> -->
                   <source media="(min-width: 1365px)" srcset="img/hero-desktop.jpg 1x, img/hero-desktop@2x.jpg 2x">
-                  <img src="img/hero-tablet.jpg" width="324" height="390" srcset="img/hero-tablet@2x.jpg 2x"
-                    alt="изображение спортсмена">
+                  <source media="(max-width: 1365px)" srcset="img/hero-tablet.jpg 1x, img/hero-tablet@2x.jpg 2x">
+                  <img src="img/hero-desktop.jpg" srcset="img/hero-desktop@2x.jpg 2x" alt="изображение спортсмена">
                 </picture>
               </div>
             </div>
@@ -61,7 +61,7 @@
       </header>
       <main>
         <section class="gym">
-          <div class="gym__wrapper">
+          <div class="gym__container">
             <div class="gym__row">
               <div class="gym__col gym__col--left">
                 <h2 class="gym__title">Тренажерный зал</h2>
@@ -80,7 +80,8 @@
                   <!-- <source type="image/webp" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x"> -->
                   <source media="(min-width: 1365px)" srcset="img/gym-desktop.jpg 1x, img/gym-desktop@2x.jpg 2x">
                   <source media="(min-width: 767px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
-                  <img src="img/gym-mobile.jpg" width="324" height="390" srcset="img/gym-mobile@2x.jpg 2x"
+                  <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
+                  <img src="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x"
                     alt="Бесплатные интерактивные онлайн-курсы">
                 </picture>
               </div>
@@ -106,6 +107,39 @@
           <div class="container">
             <div class="subs__wrapper">
               <h2 class="subs__title">Абонементы</h2>
+            </div>
+          </div>
+        </section>
+        <section class="games">
+          <div class="container">
+            <div class="games__wrapper">
+              <div class="games__col games__col--left">
+                <h2 class="games__title">SUPER GAMES</h2>
+                <div class="games__inner">
+                  <div class="games__date">
+                    <span class="games__label">Дата</span>
+                    <time class="visually-hidden" datetime="2019-03-07">7 Марта 2019</time>
+                    <p class="games__date-text" datetime="2019-03-07">7 Марта 2019</p>
+                  </div>
+                  <div class="games__time">
+                    <span class="games__label">Время</span>
+                    <time class="games__time-text" datetime="2019-03-07T12:00">12:00</time>
+                  </div>
+                  <!-- <time datetime="2019-03-07T12:00">07 Марта 2019</time> -->
+                </div>
+                <p class="games__descr">Ежегодные соревнования по CrossFit</p>
+                <a class="games__link" href="#">Заполнить заявку</a>
+              </div>
+              <div class="games__col games__col--right">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1365px)" srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x"> -->
+                  <!-- <source type="image/webp" media="(min-width: 767px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x"> -->
+                  <source media="(min-width: 1365px)" srcset="img/games-desktop.jpg 1x, img/games-desktop@2x.jpg 2x">
+                  <source media="(min-width: 767px)" srcset="img/games-tablet.jpg 1x, img/games-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="img/games-mobile.jpg 1x, img/games-mobile@2x.jpg 2x">
+                  <img src="img/games-desktop.jpg" srcset="img/games-desktop@2x.jpg 2x" alt="изображение спортсмена">
+                </picture>
+              </div>
             </div>
           </div>
         </section>
