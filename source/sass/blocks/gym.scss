@@ -62,30 +62,45 @@
 
   &--right {
     @include vp-767 {
-      margin: 0 auto;
       margin-bottom: 40px;
     }
   }
 }
 
 .gym__col--right img {
-  width: 660px;
+  width: 100%;
   height: 401px;
+  object-fit: cover;
 
   @include vp-1365 {
-    width: 678px;
     height: 345px;
-    margin: 0 auto;
   }
 
   @include vp-767 {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 313px;
     // width: 320px;
     // height: 313px;
   }
 }
+
+// .gym__col--right img {
+//   width: 660px;
+//   height: 401px;
+
+//   @include vp-1365 {
+//     width: 678px;
+//     height: 345px;
+//     margin: 0 auto;
+//   }
+
+//   @include vp-767 {
+//     max-width: 100%;
+//     height: auto;
+//     object-fit: cover;
+//     // width: 320px;
+//     // height: 313px;
+//   }
+// }
 
 .gym__title {
   margin: 0;
@@ -164,14 +179,14 @@
   bottom: -115px;
   left: 39.58%;
   width: 364px;
-  height: 228px;
+  // height: 228px;
 
   @include vp-1365 {
     bottom: -83px;
     left: 50%;
     transform: translateX(-50%);
     width: 266px;
-    height: 167px;
+    // height: 167px;
   }
 
   @include vp-767 {
@@ -179,8 +194,7 @@
     transform: translateX(0);
     bottom: 0;
     left: 0;
-    margin: 0 auto;
-    width: 320px;
-    height: 167px;
+    width: 100%;
+    // height: auto;
   }
 }
