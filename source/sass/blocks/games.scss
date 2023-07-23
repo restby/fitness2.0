@@ -59,6 +59,7 @@
 .games__title {
   grid-area: 1 / 1 / 3 / 2;
   margin: 0;
+  margin-bottom: 35px;
   color: $text-light;
   text-align: center;
   font-family: $ff-alumniSans;
@@ -68,6 +69,7 @@
   letter-spacing: 2.46px;
 
   @include vp-1365 {
+    margin-bottom: 15px;
     font-size: 48px;
     letter-spacing: 1.44px;
   }
@@ -144,6 +146,10 @@
   padding-top: 10px;
   display: flex;
   flex-direction: column;
+
+  @include vp-1365 {
+    padding-top: 7px;
+  }
 }
 
 .games__time {

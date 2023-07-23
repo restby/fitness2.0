@@ -1,0 +1,105 @@
+.card {
+  background: $color-default-white;
+  padding: 7px 7px;
+
+  &:hover {
+    background: linear-gradient(135deg, #D10A42 0%, #0041CA 100%);
+  }
+
+  &:hover .card__btn {
+    background: $fill-gradient;
+    color: $text-light;
+    border: none;
+    outline: none;
+    padding-top: 27px;
+    padding-bottom: 21px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 61px 10px;
+  background-color: $color-default-white;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 110.16%;
+
+  @include vp-767 {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+}
+
+.card__descr {
+  margin: 0;
+  margin-bottom: 96px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%;
+
+  @include vp-767 {
+    margin-bottom: 81px;
+  }
+}
+
+.card__price {
+  margin: 0;
+  margin-bottom: 29px;
+  position: relative;
+  z-index: 1;
+
+
+
+  @include vp-767 {
+    margin-bottom: 27px;
+  }
+}
+
+.card__price-count {
+  display: block;
+  padding-right: 44px;
+  text-align: right;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 150%;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 42px;
+    background-image: url("../../img/svg/rouble.svg");
+  }
+}
+
+.card__price-bg {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #E8E8E8;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 150%;
+  z-index: -1;
+}
+
+.card__btn {
+  width: 206px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,7 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 152">
+<circle class="video__btn-border" id="Ellipse" cx="50" cy="50" r="49"/>
+<circle class="video__btn-background" id="Ellipse_2" cx="50" cy="50" r="36"/>
+<path class="video__btn-triangle" id="Polygon" d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z"/>
+</g>
+</svg>

@@ -2,6 +2,8 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/data-tabs";
+@import "vendor/tabs";
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
@@ -23,11 +25,14 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/section-title";
 @import "blocks/page-header";
 @import "blocks/logo";
 @import "blocks/hero";
 @import "blocks/gym";
 @import "blocks/video";
+@import "blocks/subs";
+@import "blocks/card";
 @import "blocks/games";
 @import "blocks/page-footer";
 @import "blocks/nav";
