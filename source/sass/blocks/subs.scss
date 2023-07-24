@@ -6,6 +6,11 @@
   @include vp-1365 {
     padding-top: 101px;
   }
+
+  @include vp-767 {
+    padding-top: 63px;
+    padding-bottom: 70px;
+  }
 }
 
 // .subs__wrapper {}
@@ -19,7 +24,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 27px;
+    margin-bottom: 21px;
   }
 }
 
@@ -47,11 +52,20 @@
     transform: translateY(13px);
     background-color: rgba(120, 120, 120, 0.20);
     ;
+
+    @include vp-767 {
+      transform: translateY(15px);
+    }
   }
 
   @include vp-1365 {
     margin-bottom: 57px;
     column-gap: 54px;
+  }
+
+  @include vp-767 {
+    column-gap: 45px;
+    margin-bottom: 48px;
   }
 }
 
@@ -77,6 +91,10 @@
       transform: translateY(13px);
       left: 0;
       background-color: #D10A42;
+
+      @include vp-767 {
+        transform: translateY(15px);
+      }
     }
   }
 
@@ -94,9 +112,17 @@
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 40px;
+  position: relative;
+  z-index: 3;
 
   @include vp-1365 {
     display: flex;
     flex-direction: column;
+  }
+
+  @include vp-767 {
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    row-gap: 35px;
   }
 }
