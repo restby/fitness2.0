@@ -8,7 +8,7 @@
 
 .hero__wrapper {
   display: grid;
-  grid-template-columns: 396px 1fr;
+  grid-template-columns: 397px 1fr;
   grid-template-rows: auto;
   grid-column-gap: 64px;
   align-items: flex-start;
@@ -75,7 +75,7 @@
 .hero__title {
   grid-area: 2 / 2 / 3 / 3;
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 48px;
   text-align: right;
   color: $text-light;
   font-family: $ff-alumniSans;
@@ -87,7 +87,7 @@
   text-transform: uppercase;
 
   @include vp-1365 {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
     font-size: 72px;
     letter-spacing: 3.6px;
     text-transform: none;
@@ -132,8 +132,9 @@
   grid-area: 3 / 2 / 4 / 3;
   justify-self: end;
   align-self: start;
-  max-width: 230px;
+  max-width: 234px;
   width: 100%;
+  min-height: 61px;
 
 
   @include vp-1365 {
