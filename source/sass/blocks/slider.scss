@@ -1,0 +1,14 @@
+.slider {
+  display: flex;
+  column-gap: 40px;
+
+  @include vp-1365 {
+    column-gap: 30px;
+  }
+
+  @include vp-767 {
+    column-gap: 0;
+  }
+}
+
+// .slider_item {}
