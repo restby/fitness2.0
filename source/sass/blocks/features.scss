@@ -20,8 +20,12 @@
 }
 
 .features__title {
-  margin-bottom: 55px;
+  margin-bottom: 26px;
   text-align: center;
+
+  @include vp-1365 {
+    margin-bottom: 28px;
+  }
 }
 
 .features__list {
@@ -32,7 +36,7 @@
   grid-template-columns: 340px 240px 340px;
   grid-template-rows: repeat(2, auto);
   grid-column-gap: 60px;
-  grid-row-gap: 168px;
+  grid-row-gap: 130px;
   position: relative;
 
   &::before,
@@ -74,6 +78,8 @@
 
   &--main {
     grid-area: 1 / 2 / 3 / 3;
+    align-self: start;
+    margin-top: 29px;
   }
 
 }
@@ -83,15 +89,19 @@
 }
 
 .features__item-col {
-
   & span {
-    color: red;
+    display: block;
+    background-image: linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 71px;
     font-weight: 700;
     line-height: 150%;
   }
 
   & small {
+    display: block;
+    margin-top: -21px;
     color: #2E35AC;
     font-size: 14px;
     font-weight: 400;
@@ -99,9 +109,19 @@
   }
 }
 
-.features__item-col--left {}
+.features__item--square .features__item-col--left,
+.features__item--comfort .features__item-col--left {
+  padding-left: 20px;
+}
 
-.features__item-col--right {}
+// .features__item-col--left {
+//   padding-left: 20px;
+// }
+
+.features__item-col--right {
+  padding-top: 22px;
+  padding-left: 29px;
+}
 
 .features__item-title {
   margin: 0;
@@ -137,7 +157,7 @@
 
   & span {
     margin-top: -16px;
-    margin-bottom: 15px;
+    margin-bottom: 32px;
     color: $text-light;
     font-size: 26px;
     font-weight: 700;
@@ -146,6 +166,7 @@
 }
 
 .features__item-text {
+  margin: 0;
   color: $text-light;
   text-align: center;
   font-size: 16px;
