@@ -2255,7 +2255,6 @@ button,
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 40px;
-  position: relative;
   z-index: 3;
 }
 @media (max-width: 1365px) {

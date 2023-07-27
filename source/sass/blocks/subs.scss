@@ -112,7 +112,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 40px;
-  position: relative;
+  // position: relative;
   z-index: 3;
 
   @include vp-1365 {

@@ -108,14 +108,15 @@
           <div class="container">
             <div class="subs__wrapper">
               <h2 class="subs__title section-title">Абонементы</h2>
-              <div class="sub__tabs">
+              <div class="sub__tabs" data-tabs="parent" data-delay="300" data-height="max">
                 <div class="sub__tabs-controls">
-                  <button class="sub__tabs-control sub__tabs-control--active" type="button">1 месяц</button>
-                  <button class="sub__tabs-control" type="button">6 месяцев</button>
-                  <button class="sub__tabs-control" type="button">12 месяцев</button>
+                  <button class="sub__tabs-control sub__tabs-control--active" type="button" data-tabs="control">1
+                    месяц</button>
+                  <button class="sub__tabs-control" type="button" data-tabs="control">6 месяцев</button>
+                  <button class="sub__tabs-control" type="button" data-tabs="control">12 месяцев</button>
                 </div>
-                <div class="sub__tabs-content">
-                  <div class="sub__tabs-element">
+                <div class="sub__tabs-content" data-tabs="content">
+                  <div class="sub__tabs-element" data-tabs="element">
                     <div class="sub__tabs-card card">
                       <div class="card__content">
                         <h3 class="card__title">С тренером</h3>
@@ -150,7 +151,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- <div class="sub__tabs-element">
+                  <div class="sub__tabs-element" data-tabs="element">
                     <div class="sub__tabs-card card">
                       <div class="card__content">
                         <h3 class="card__title">С тренером</h3>
@@ -185,7 +186,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="sub__tabs-element">
+                  <div class="sub__tabs-element" data-tabs="element">
                     <div class="sub__tabs-card card">
                       <div class="card__content">
                         <h3 class="card__title">С тренером</h3>
@@ -219,7 +220,7 @@
                         <a class="card__btn btn btn--on-light" href="#">купить абонемент</a>
                       </div>
                     </div>
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </div>
@@ -227,7 +228,7 @@
         </section>
 
         <!-- tabs компонент Лиги -->
-        <!-- <section class="component-demo">
+        <!--<section class="component-demo">
           <div class="container">
             <h2 class="subtitle">Пример с data-height="max"</h2>
             <div class="tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
