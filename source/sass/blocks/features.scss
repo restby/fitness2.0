@@ -1,7 +1,7 @@
 .features {
   background-color: $color-grey;
   padding-top: 108px;
-  padding-bottom: 129px;
+  padding-bottom: 122px;
 
   @include vp-1365 {
     padding-top: 91px;
@@ -10,7 +10,7 @@
 
   @include vp-767 {
     padding-top: 63px;
-    padding-bottom: 62px;
+    padding-bottom: 67px;
   }
 }
 
@@ -25,7 +25,7 @@
   }
 
   @include vp-767 {
-    padding: 0 15px;
+    padding: 0;
   }
 }
 
@@ -35,6 +35,10 @@
 
   @include vp-1365 {
     margin-bottom: 28px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
   }
 }
 
@@ -57,19 +61,28 @@
     width: 340px;
     top: 50%;
     background-color: rgba(209, 10, 66, 0.20);
-    transform: translateY(-50%);
+    transform: translateY(11px);
   }
 
   &::before {
     left: 0;
+
+    @include vp-1365 {
+      display: none;
+    }
   }
 
   &::after {
     right: 0;
+
+    @include vp-1365 {
+      display: none;
+    }
   }
 
   @include vp-1365 {
-    grid-template-columns: 324px 324px;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: 324px 324px;
     grid-template-rows: repeat(3, auto);
     grid-column-gap: 30px;
     grid-row-gap: 0;
@@ -78,15 +91,24 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
+    row-gap: 21px;
   }
 }
 
 .features__item {
+  @include vp-767 {
+    padding: 0 15px;
+  }
+
   &--square {
     grid-area: 1 / 1 / 2 / 2;
 
     @include vp-1365 {
       grid-area: 1 / 1 / 2 / 2;
+    }
+
+    @include vp-767 {
+      order: 1;
     }
   }
 
@@ -96,6 +118,10 @@
     @include vp-1365 {
       grid-area: 1 / 2 / 2 / 3;
     }
+
+    @include vp-767 {
+      order: 2;
+    }
   }
 
   &--comfort {
@@ -103,6 +129,10 @@
 
     @include vp-1365 {
       grid-area: 3 / 1 / 4 / 2;
+    }
+
+    @include vp-767 {
+      order: 4
     }
   }
 
@@ -112,21 +142,32 @@
     @include vp-1365 {
       grid-area: 3 / 2 / 4 / 3;
     }
+
+    @include vp-767 {
+      order: 5;
+    }
   }
 
   &--main {
     grid-area: 1 / 2 / 3 / 3;
-    align-self: start;
-    margin-top: 29px;
 
     @include vp-1365 {
       grid-area: 2 / 1 / 3 / 3;
+    }
+
+    @include vp-767 {
+      order: 3;
     }
   }
 }
 
 .features__item-row {
   display: flex;
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .features__item-col {
@@ -138,6 +179,10 @@
     font-size: 71px;
     font-weight: 700;
     line-height: 150%;
+
+    @include vp-1365 {
+      font-size: 58px;
+    }
   }
 
   & small {
@@ -147,21 +192,37 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
+
+    @include vp-1365 {
+      margin-top: -18px;
+    }
+
+    @include vp-767 {
+      text-align: center;
+    }
   }
 }
 
-.features__item--square .features__item-col--left,
-.features__item--comfort .features__item-col--left {
+.features__item:nth-child(2n + 1) .features__item-col--left {
   padding-left: 20px;
-}
 
-// .features__item-col--left {
-//   padding-left: 20px;
-// }
+  @include vp-1365 {
+    padding: 0;
+  }
+}
 
 .features__item-col--right {
   padding-top: 22px;
   padding-left: 29px;
+
+  @include vp-1365 {
+    padding-top: 14px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+    padding-top: 5px;
+  }
 }
 
 .features__item-title {
@@ -170,6 +231,15 @@
   font-size: 22px;
   font-weight: 700;
   line-height: 150%;
+
+  @include vp-1365 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    text-align: center;
+  }
 }
 
 .features__item-descr {
@@ -177,6 +247,16 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 140%;
+
+  @include vp-1365 {
+    padding-right: 3px;
+  }
+
+  @include vp-767 {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 31px;
+  }
 }
 
 .features__item--main {
@@ -188,6 +268,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: start;
+  margin-top: 29px;
 
   & b {
     color: $text-light;
@@ -203,6 +285,39 @@
     font-size: 26px;
     font-weight: 700;
     line-height: 150%;
+
+    @include vp-1365 {
+      font-size: 22px;
+      margin-top: -18px;
+      margin-bottom: 14px;
+    }
+
+    @include vp-767 {
+      margin-top: -25px;
+      margin-bottom: 9px;
+    }
+  }
+
+  @include vp-1365 {
+    margin-top: 45px;
+    margin-bottom: 27px;
+    padding-top: 13px;
+    padding-bottom: 38px;
+    padding-left: 135px;
+    padding-right: 135px;
+    max-width: 442px;
+    justify-self: center;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-top: 19px;
+    padding-bottom: 44px;
+    margin-top: 26px;
+    margin-bottom: 4px;
   }
 }
 
