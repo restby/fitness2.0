@@ -79,7 +79,7 @@
   cursor: pointer;
   position: relative;
 
-  &--active {
+  &.is-active {
     color: #102654;
 
     &::after {
@@ -107,7 +107,8 @@
   }
 }
 
-.sub__tabs-element {
+.sub__tabs-element[data-tabs="element"] {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 40px;

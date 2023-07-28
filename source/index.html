@@ -110,7 +110,7 @@
               <h2 class="subs__title section-title">Абонементы</h2>
               <div class="sub__tabs" data-tabs="parent" data-delay="300" data-height="max">
                 <div class="sub__tabs-controls">
-                  <button class="sub__tabs-control sub__tabs-control--active" type="button" data-tabs="control">1
+                  <button class="sub__tabs-control is-active" type="button" data-tabs="control">1
                     месяц</button>
                   <button class="sub__tabs-control" type="button" data-tabs="control">6 месяцев</button>
                   <button class="sub__tabs-control" type="button" data-tabs="control">12 месяцев</button>
@@ -494,26 +494,40 @@
           <div class="container">
             <h2 class="section-title actions__title">Акции</h2>
             <div class="actions__wrapper">
-              <div class="actions__item-main">
-                <div class="actions__item-col">
+              <div class="actions__item actions__item--main">
+                <div class="actions__item-col actions__item-col--left">
                   <h3 class="actions__item-title">Год</h3>
                   <b>4999</b>
-                  <p class="actions__item-descr">Безлимитный абонемент в тренажерный зал</p>
-                  <a href="#">подробнее</a>
+                  <p class="actions__item-descr">Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                  <a class="actions__item-link" href="#">подробнее</a>
                 </div>
-                <div class="actions__item-col">
-                  <img src="" alt="">
+                <div class="actions__item-col actions__item-col--right">
+                  <picture>
+                    <!-- <source type="image/webp" media="(min-width: 1365px)"
+                                    srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x"> -->
+                    <!-- <source type="image/webp" media="(min-width: 767px)"
+                                    srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x"> -->
+                    <source media="(min-width: 1365px)"
+                      srcset="img/action-desktop.jpg 1x, img/action-desktop@2x.jpg 2x">
+                    <source media="(max-width: 1365px)" srcset="img/action-tablet.jpg 1x, img/action-tablet@2x.jpg 2x">
+                    <img src="img/action-desktop.jpg" srcset="img/action-desktop@2x.jpg 2x"
+                      alt="изображение спортивной девушки">
+                  </picture>
                 </div>
               </div>
-              <div class="actions__item">
-                <h3 class="actions__item-title">Месяц бесплатно</h3>
-                <p class="actions__item-descr">Приведи друга, получи абонемент в подарок</p>
-                <a href="#">подробнее</a>
+              <div class="actions__item actions__item--free">
+                <div class="actions__item-content">
+                  <h3 class="actions__item-title">Месяц бесплатно</h3>
+                  <p class="actions__item-descr">Приведи друга, получи абонемент в&nbsp;подарок</p>
+                  <a class="actions__item-link" href="#">подробнее</a>
+                </div>
               </div>
-              <div class="actions__item">
-                <h3 class="actions__item-title">Скидка 20%</h3>
-                <p class="actions__item-descr">Корпоративный фитнес с командой</p>
-                <a href="#">подробнее</a>
+              <div class="actions__item actions__item--discount">
+                <div class="actions__item-content">
+                  <h3 class="actions__item-title">Скидка 20%</h3>
+                  <p class="actions__item-descr">Корпоративный фитнес с&nbsp;командой</p>
+                  <a class="actions__item-link" href="#">подробнее</a>
+                </div>
               </div>
             </div>
           </div>
