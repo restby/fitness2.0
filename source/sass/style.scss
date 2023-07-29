@@ -4,6 +4,8 @@
 @import "vendor/normalize";
 @import "vendor/data-tabs";
 @import "vendor/tabs";
+@import "vendor/data-accordion";
+@import "vendor/accordion";
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
@@ -40,6 +42,9 @@
 @import "blocks/slide";
 @import "blocks/features";
 @import "blocks/actions";
+@import "blocks/faq";
+@import "blocks/reviews";
+@import "blocks/review-card";
 @import "blocks/freebie";
 @import "blocks/form";
 @import "blocks/contacts";
