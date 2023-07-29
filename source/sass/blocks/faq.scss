@@ -1,21 +1,21 @@
 .faq {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 122px;
   background-color: $color-grey;
 
   @include vp-1365 {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
 
   @include vp-767 {
     padding-top: 73px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
   }
 }
 
 .faq__title {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   @include vp-1365 {
     margin-bottom: 42px;
@@ -87,7 +87,7 @@
 }
 
 .faq__tabs-content {
-  flex: 0 1 74.14%;
+  flex: 0 1 74%;
 
   @include vp-1365 {
     flex: 0 1 100%;
@@ -100,9 +100,9 @@
 
 .faq__item {
   display: flex;
-  justify-content: space-between;
-  padding-top: 32px;
-  padding-bottom: 25px;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-bottom: 24px;
   border-top: 1px solid rgba(28, 51, 116, 0.20);
   border-bottom: 1px solid rgba(28, 51, 116, 0.20);
 
@@ -110,33 +110,32 @@
     border-top: none;
   }
 
+  @include vp-1365 {
+    padding-bottom: 23px;
+  }
+
   @include vp-767 {
-    padding-top: 22px;
+    padding-top: 19px;
+    padding-bottom: 20px;
   }
 }
 
 .faq__item-inner {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .faq__item-title {
   margin: 0;
-  margin-bottom: 14px;
+  padding-right: 5px;
   font-size: 24px;
   font-weight: 500;
   line-height: 120%;
 
-  @include vp-1365 {
-    margin-bottom: 17px;
-    line-height: 100%;
-  }
-
   @include vp-767 {
-    margin-bottom: 12px;
     max-width: 238px;
     font-size: 18px;
-    line-height: 120%;
   }
 }
 
@@ -153,17 +152,105 @@
 
   @include vp-767 {
     font-size: 16px;
-    max-width: 100%;
+    max-width: auto;
   }
 }
 
 .faq__item-button {
+  flex-shrink: 0;
   cursor: pointer;
   padding: 0;
   width: 42px;
   height: 42px;
-  border: none;
+  border: 1px solid $stroke-dark;
   border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+
+  @include hover-focus {
+    background-color: $stroke-dark;
+
+    &::before,
+    &::after {
+      background-color: $color-default-white;
+    }
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $stroke-dark;
+    top: 50%;
+    left: 50%;
+  }
+
+  &::before {
+    width: 18px;
+    height: 1px;
+    transform: translateX(-50%);
+
+    @include vp-767 {
+      width: 12px;
+    }
+  }
+
+  &::after {
+    width: 1px;
+    height: 18px;
+    transform: translateY(-50%);
+
+    @include vp-767 {
+      height: 12px;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  @include vp-767 {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.faq__item.is-active {
+
+  & .faq__item-inner {
+    margin-bottom: 8px;
+
+    @include vp-767 {
+      margin-bottom: 12px;
+    }
+  }
+
+  & .faq__item-title {
+    @include vp-1365 {
+      margin-top: -6px;
+      line-height: 100%;
+    }
+
+    @include vp-767 {
+      margin-top: 0;
+      line-height: 120%;
+    }
+
+
+  }
+
+  & .faq__item-button {
+    background-color: $stroke-dark;
+
+    &::before {
+      background-color: $color-default-white;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .component-demo {}
