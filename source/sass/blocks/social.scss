@@ -8,9 +8,14 @@
   row-gap: 10px;
   max-width: 100px;
 
+  @include vp-1365 {
+    padding-top: 4px;
+  }
+
   @include vp-767 {
     width: 100%;
     max-width: 100%;
+    padding-top: 0;
   }
 }
 
@@ -24,4 +29,38 @@
   height: 25px;
   background-color: $color-default-white;
   border-radius: 50%;
+
+  @include hover-focus {
+    background-color: $fill-action;
+  }
+
+  @include active {
+    background-color: $stroke-dark;
+  }
+
+  &:active {
+    background-color: $stroke-dark;
+  }
+
+  &--disabled {
+    background-color: $color-default-white;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  & svg {
+    color: $color-darker;
+
+    @include hover-focus {
+      color: $text-light;
+    }
+
+    @include active {
+      color: $text-light;
+    }
+
+    &:active {
+      color: $text-light;
+    }
+  }
 }
