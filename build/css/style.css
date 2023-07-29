@@ -1514,7 +1514,7 @@ button,
 @media (max-width: 1365px) {
   .page-header {
     padding-top: 35px;
-    padding-bottom: 82px;
+    padding-bottom: 83px;
     background-image: url("../../img/hero-bg-tablet.png");
   }
 }
@@ -1986,8 +1986,8 @@ button,
   .gym__text {
     margin-bottom: 43px;
     text-align: center;
-    padding-left: 88px;
-    padding-right: 88px;
+    padding-left: 87px;
+    padding-right: 87px;
   }
 }
 @media (max-width: 767px) {
@@ -2275,6 +2275,20 @@ button,
     grid-column-gap: 0;
     grid-row-gap: 0;
     row-gap: 35px;
+  }
+}
+
+.sub__tabs-card {
+  max-width: 360px;
+}
+@media (max-width: 1365px) {
+  .sub__tabs-card {
+    max-width: 442px;
+  }
+}
+@media (max-width: 767px) {
+  .sub__tabs-card {
+    max-width: 100%;
   }
 }
 

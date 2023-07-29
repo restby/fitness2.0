@@ -127,3 +127,15 @@
     row-gap: 35px;
   }
 }
+
+.sub__tabs-card {
+  max-width: 360px;
+
+  @include vp-1365 {
+    max-width: 442px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+  }
+}
