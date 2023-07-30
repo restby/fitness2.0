@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
-  // background-color: $color-gradient;
   background-image: $fill-gradient, url("../../img/hero-bg-desktop.png");
 
   @include retina {

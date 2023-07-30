@@ -82,7 +82,6 @@
 
   @include vp-1365 {
     grid-template-columns: repeat(2, 1fr);
-    // grid-template-columns: 324px 324px;
     grid-template-rows: repeat(3, auto);
     grid-column-gap: 30px;
     grid-row-gap: 0;

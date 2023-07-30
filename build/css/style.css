@@ -3398,6 +3398,7 @@ button,
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .games__col-inner {
   display: -webkit-box;
   display: -ms-flexbox;
