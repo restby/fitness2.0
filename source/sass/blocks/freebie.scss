@@ -17,6 +17,7 @@
 
   &--form,
   &--contacts {
+    border-top: 1px solid #74819C;
     flex: 0 1 50%;
 
     @include vp-1365 {
