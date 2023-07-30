@@ -1,5 +1,5 @@
 const trainersSwiper = document.querySelector('.trainers__slider');
-const commentsSwiper = document.querySelector('.swiper--comments');
+const commentsSwiper = document.querySelector('.reviews__slider');
 
 const initSwiper = () => {
   if (trainersSwiper) {
@@ -7,8 +7,8 @@ const initSwiper = () => {
 
       loop: true,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.trainers__arrow--next',
+        prevEl: '.trainers__arrow--prev',
       },
 
       breakpoints: {
@@ -40,8 +40,8 @@ const initSwiperComments = () => {
       spaceBetween: 40,
 
       navigation: {
-        nextEl: '.swiper-arrow--right',
-        prevEl: '.swiper-arrow--left',
+        nextEl: '.reviews__arrow--next',
+        prevEl: '.reviews__arrow--prev',
       },
     });
   }
