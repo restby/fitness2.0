@@ -1,13 +1,17 @@
 .slide {
   width: 260px;
+  height: 294px;
   position: relative;
+  overflow: hidden;
 
   @include vp-1365 {
     width: 268px;
+    height: 294px;
   }
 
   @include vp-767 {
     width: 226px;
+    height: 274px;
   }
 
   & img {
@@ -27,7 +31,7 @@
 
   &:focus .slide__text,
   &:hover .slide__text {
-    display: flex;
+    top: 0;
   }
 
   &:focus .slide__name,
@@ -36,11 +40,10 @@
   }
 }
 
-
 .slide__name,
 .slide__text-name {
-  margin: 0;
   text-align: center;
+  margin: 0;
   color: $text-light;
   font-size: 18px;
   font-weight: 700;
@@ -53,33 +56,39 @@
 
 .slide__text {
   position: absolute;
-  top: 0;
-  display: none;
+  top: -300px;
+  height: 100%;
+  display: flex;
   flex-direction: column;
   background-color: rgba(#102654, 0.89);
-  padding-top: 58px;
-  padding-bottom: 33px;
-  padding-left: 55px;
-  padding-right: 40px;
-}
+  padding-top: 51px;
 
-.slide__text-name {
-  text-align: center;
+  @include vp-767 {
+    padding-top: 41px;
+  }
 }
 
 .slide__text-descr {
+  margin-top: -3px;
+  margin-bottom: 32px;
   color: #B6BDCC;
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .slide__text-list {
   margin: 0;
   padding: 0;
+  padding-left: 55px;
+  padding-right: 46px;
   list-style-type: none;
+
+  @include vp-767 {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
 }
 
 .slide__text-item {

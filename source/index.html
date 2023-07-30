@@ -267,10 +267,10 @@
           </div>
         </section>
         <section class="trainers">
-          <div class="container">
+          <div class="trainers__slider swiper">
             <h2 class="section-title trainers__title">Тренеры</h2>
-            <div class="trainers__slider slider">
-              <div class="slider__item slide">
+            <div class="trainers__wrapper swiper-wrapper">
+              <div class="trainers__slide swiper-slide slide">
                 <img src="img/trainers/trainer-1-desktop.jpg" alt="Анна Павлова">
                 <p class="slide__name">Анна Павлова</p>
                 <div class="slide__text">
@@ -283,7 +283,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__item slide">
+              <div class="trainers__slide swiper-slide slide">
                 <img src="img/trainers/trainer-2-desktop.jpg" alt="Алексей Лавров">
                 <p class="slide__name">Алексей Лавров</p>
                 <div class="slide__text">
@@ -296,7 +296,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__item slide">
+              <div class="trainers__slide swiper-slide slide">
                 <img src="img/trainers/trainer-3-desktop.jpg" alt="Александр Пашков">
                 <p class="slide__name">Александр Пашков</p>
                 <div class="slide__text">
@@ -309,7 +309,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__item slide">
+              <div class="trainers__slide swiper-slide slide">
                 <img src="img/trainers/trainer-4-desktop.jpg" alt="Мария Кетова">
                 <p class="slide__name">Мария Кетова</p>
                 <div class="slide__text">
@@ -322,7 +322,7 @@
                   </ul>
                 </div>
               </div>
-              <!-- <div class="slider__item slide">
+              <div class="trainers__slide swiper-slide slide">
                 <img src="img/trainers/trainer-1-desktop.jpg" alt="Анна Павлова">
                 <p class="slide__name">Анна Павлова</p>
                 <div class="slide__text">
@@ -335,7 +335,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__item slide">
+              <div class="trainers__slide swiper-slide slide">
                 <img src="img/trainers/trainer-2-desktop.jpg" alt="Алексей Лавров">
                 <p class="slide__name">Алексей Лавров</p>
                 <div class="slide__text">
@@ -348,7 +348,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__item slide">
+              <div class="trainers__slide swiper-slide slide">
                 <img src="img/trainers/trainer-3-desktop.jpg" alt="Александр Пашков">
                 <p class="slide__name">Александр Пашков</p>
                 <div class="slide__text">
@@ -361,7 +361,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__item slide">
+              <div class="trainers__slide swiper-slide slide">
                 <img src="img/trainers/trainer-4-desktop.jpg" alt="Мария Кетова">
                 <p class="slide__name">Мария Кетова</p>
                 <div class="slide__text">
@@ -373,10 +373,25 @@
                     <li class="slide__text-item">Опыт — 6 лет</li>
                   </ul>
                 </div>
-              </div> -->
+              </div>
             </div>
           </div>
+          <button class="trainers__arrow trainers__arrow--prev swiper-arrow swiper-button-prev" type="button"
+            aria-label="Предыдущий слайд.">
+            <svg width="16" height="32">
+              <use href="img/sprite.svg#icon-prev-arrow"></use>
+            </svg>
+          </button>
+          <button class="trainers__arrow trainers__arrow--next swiper-arrow swiper-button-next" type="button"
+            aria-label="Следующий слайд.">
+            <svg width="16" height="32">
+              <use href="img/sprite.svg#icon-next-arrow"></use>
+            </svg>
+          </button>
         </section>
+
+
+
         <section class="features">
           <div class="features__container">
             <h2 class="section-title features__title">Наши преимущества</h2>
