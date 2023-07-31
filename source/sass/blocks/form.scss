@@ -46,7 +46,7 @@
     }
   }
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding-top: 60px;
     padding-left: 132px;
     padding-right: 160px;
@@ -65,7 +65,7 @@
   column-gap: 30px;
   margin-bottom: 28px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     column-gap: 60px;
   }
 
@@ -81,7 +81,7 @@
   margin-bottom: 27px;
   color: $text-light;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin-bottom: 33px;
   }
 }

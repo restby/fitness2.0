@@ -3,7 +3,7 @@
   padding-top: 108px;
   padding-bottom: 122px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding-top: 91px;
     padding-bottom: 95px;
   }
@@ -20,7 +20,7 @@
   margin: 0 auto;
   padding: 0 163px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding: 0 45px;
   }
 
@@ -33,7 +33,7 @@
   margin-bottom: 26px;
   text-align: center;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin-bottom: 28px;
   }
 
@@ -67,7 +67,7 @@
   &::before {
     left: 0;
 
-    @include vp-1365 {
+    @include vp-1199 {
       display: none;
     }
   }
@@ -75,12 +75,12 @@
   &::after {
     right: 0;
 
-    @include vp-1365 {
+    @include vp-1199 {
       display: none;
     }
   }
 
-  @include vp-1365 {
+  @include vp-1199 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-column-gap: 30px;
@@ -102,7 +102,7 @@
   &--square {
     grid-area: 1 / 1 / 2 / 2;
 
-    @include vp-1365 {
+    @include vp-1199 {
       grid-area: 1 / 1 / 2 / 2;
     }
 
@@ -114,7 +114,7 @@
   &--parking {
     grid-area: 1 / 3 / 2 / 4;
 
-    @include vp-1365 {
+    @include vp-1199 {
       grid-area: 1 / 2 / 2 / 3;
     }
 
@@ -126,7 +126,7 @@
   &--comfort {
     grid-area: 2 / 1 / 3 / 2;
 
-    @include vp-1365 {
+    @include vp-1199 {
       grid-area: 3 / 1 / 4 / 2;
     }
 
@@ -138,7 +138,7 @@
   &--experience {
     grid-area: 2 / 3 / 3 / 4;
 
-    @include vp-1365 {
+    @include vp-1199 {
       grid-area: 3 / 2 / 4 / 3;
     }
 
@@ -167,7 +167,7 @@
     font-weight: 700;
     line-height: 150%;
 
-    @include vp-1365 {
+    @include vp-1199 {
       font-size: 58px;
     }
   }
@@ -180,7 +180,7 @@
     font-weight: 400;
     line-height: 150%;
 
-    @include vp-1365 {
+    @include vp-1199 {
       margin-top: -18px;
     }
 
@@ -193,7 +193,7 @@
 .features__item:nth-child(2n + 1) .features__item-col--left {
   padding-left: 20px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding: 0;
   }
 }
@@ -202,7 +202,7 @@
   padding-top: 22px;
   padding-left: 29px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding-top: 14px;
   }
 
@@ -219,7 +219,7 @@
   font-weight: 700;
   line-height: 150%;
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 20px;
     margin-bottom: 0;
   }
@@ -236,7 +236,7 @@
   font-weight: 300;
   line-height: 140%;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding-right: 3px;
   }
 
@@ -275,7 +275,7 @@
     font-weight: 700;
     line-height: 150%;
 
-    @include vp-1365 {
+    @include vp-1199 {
       font-size: 22px;
       margin-top: -18px;
       margin-bottom: 14px;
@@ -287,7 +287,7 @@
     }
   }
 
-  @include vp-1365 {
+  @include vp-1199 {
     grid-area: 2 / 1 / 3 / 3;
     margin-top: 44px;
     margin-bottom: 27px;

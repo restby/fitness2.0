@@ -3,7 +3,7 @@
   padding-bottom: 105px;
   position: relative;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding-top: 100px;
     padding-bottom: 101px;
   }
@@ -19,7 +19,7 @@
   margin: 0 auto;
   position: relative;
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 566px;
   }
 
@@ -31,7 +31,7 @@
 .trainers__title {
   margin-bottom: 49px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin-bottom: 31px;
     text-align: center;
   }
@@ -51,7 +51,7 @@
   background-color: transparent;
   transform: translateY(-50%);
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin-top: 41px;
   }
 

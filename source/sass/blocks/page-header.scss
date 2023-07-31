@@ -12,7 +12,7 @@
     background-image: url("../../img/hero-bg-desktop@2x.png");
   }
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding-top: 35px;
     padding-bottom: 83px;
     background-image: url("../../img/hero-bg-tablet.png");
@@ -51,7 +51,7 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin-bottom: 18px;
     align-items: center;
   }
@@ -70,7 +70,7 @@
   letter-spacing: 0.78px;
   max-width: 190px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 0.48px;

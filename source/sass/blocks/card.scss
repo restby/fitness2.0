@@ -17,7 +17,7 @@
     outline: none;
   }
 
-  @include vp-1365 {
+  @include vp-1199 {
     max-width: 442px;
     margin: 0 auto;
     width: 100%;
@@ -41,7 +41,7 @@
   padding-left: 10px;
   background-color: $color-default-white;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding-top: 56px;
   }
 

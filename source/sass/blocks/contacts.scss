@@ -3,7 +3,7 @@
   padding-right: 159px;
   padding-left: 120px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding-top: 60px;
     padding-bottom: 66px;
     padding-left: 45px;
@@ -14,12 +14,12 @@
     padding-top: 62px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 66px;
+    padding-bottom: 55px;
   }
 }
 
 .contacts__container {
-  @include vp-1365 {
+  @include vp-1199 {
     padding-left: 88px;
     padding-right: 10px;
   }
@@ -33,7 +33,7 @@
 .contacts__title {
   margin-bottom: 37px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin-bottom: 32px;
   }
 
@@ -62,7 +62,7 @@
     left: 58%;
     background-color: #74819c;
 
-    @include vp-1365 {
+    @include vp-1199 {
       left: 45.86%;
     }
 
@@ -71,7 +71,7 @@
     }
   }
 
-  @include vp-1365 {
+  @include vp-1199 {
     grid-template-columns: 52.21% 47.79%;
     grid-row-gap: 19px;
   }
@@ -87,7 +87,7 @@
   &:nth-child(2n) {
     padding-left: 67px;
 
-    @include vp-1365 {
+    @include vp-1199 {
       padding-left: 11px;
     }
 
@@ -128,10 +128,14 @@
   font-weight: 700;
   line-height: 150%;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin-bottom: 4px;
     font-size: 20px;
     max-width: 218px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 7px;
   }
 }
 
@@ -152,7 +156,7 @@
     text-decoration: none;
   }
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 18px;
     max-width: 218px;
   }

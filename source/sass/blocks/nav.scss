@@ -2,7 +2,7 @@
   margin-left: 23.02%;
   margin-right: 22.07%;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding-top: 3px;
     margin-left: 7.67%;
     margin-right: 5.31%;
@@ -23,7 +23,7 @@
   column-gap: 20px;
   width: 451px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     column-gap: 10px;
     width: 411px;
   }

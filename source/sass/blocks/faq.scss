@@ -3,7 +3,7 @@
   padding-bottom: 122px;
   background-color: $color-grey;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding-top: 100px;
     padding-bottom: 77px;
   }
@@ -17,7 +17,7 @@
 .faq__title {
   margin-bottom: 38px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin-bottom: 42px;
     text-align: center;
   }
@@ -31,7 +31,7 @@
   display: flex;
   column-gap: 40px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     flex-wrap: wrap;
   }
 }
@@ -42,7 +42,7 @@
   flex-direction: column;
   row-gap: 10px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     flex-direction: row;
     column-gap: 10px;
     flex: 0 1 100%;
@@ -74,7 +74,7 @@
     opacity: 0.7;
   }
 
-  @include vp-1365 {
+  @include vp-1199 {
     flex: 0 1 25%;
     font-size: 16px;
   }
@@ -87,7 +87,7 @@
 .faq__tabs-content {
   flex: 0 1 74%;
 
-  @include vp-1365 {
+  @include vp-1199 {
     flex: 0 1 100%;
   }
 }
@@ -108,7 +108,7 @@
     border-top: none;
   }
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding-bottom: 23px;
   }
 
@@ -143,7 +143,7 @@
   font-weight: 300;
   line-height: 140%;
 
-  @include vp-1365 {
+  @include vp-1199 {
     max-width: 560px;
   }
 
@@ -224,7 +224,7 @@
   }
 
   & .faq__item-title {
-    @include vp-1365 {
+    @include vp-1199 {
       margin-top: -6px;
       line-height: 100%;
     }
