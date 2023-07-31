@@ -13,8 +13,6 @@
   }
 }
 
-// .subs__wrapper {}
-
 .subs__title {
   text-align: center;
   margin-bottom: 17px;
@@ -50,8 +48,7 @@
     bottom: 0;
     left: 0;
     transform: translateY(13px);
-    background-color: rgba(120, 120, 120, 0.20);
-    ;
+    background-color: rgba(120, 120, 120, 0.2);
 
     @include vp-767 {
       transform: translateY(15px);
@@ -71,7 +68,7 @@
 
 .sub__tabs-control {
   padding: 0;
-  color: rgba(16, 38, 84, 0.50);
+  color: rgba(16, 38, 84, 0.5);
   font-size: 20px;
   line-height: 150%;
   background-color: transparent;
@@ -90,7 +87,7 @@
       bottom: 0;
       transform: translateY(13px);
       left: 0;
-      background-color: #D10A42;
+      background-color: #d10a42;
 
       @include vp-767 {
         transform: translateY(15px);

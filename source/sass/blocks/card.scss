@@ -3,11 +3,11 @@
   padding: 7px 7px;
 
   &--active {
-    background: linear-gradient(135deg, #D10A42 0%, #0041CA 100%);
+    background: linear-gradient(135deg, #d10a42 0%, #0041ca 100%);
   }
 
   &:hover {
-    background: linear-gradient(135deg, #D10A42 0%, #0041CA 100%);
+    background: linear-gradient(135deg, #d10a42 0%, #0041ca 100%);
   }
 
   &:hover .card__btn {
@@ -128,7 +128,7 @@
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
-  color: #E8E8E8;
+  color: #e8e8e8;
   font-size: 100px;
   font-weight: 700;
   line-height: 150%;

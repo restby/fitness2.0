@@ -61,7 +61,7 @@
 
 .faq__tabs-control {
   min-height: 54px;
-  border: 1px solid rgba(16, 38, 84, 0.20);
+  border: 1px solid rgba(16, 38, 84, 0.2);
 
   font-size: 18px;
   font-weight: 500;
@@ -101,8 +101,8 @@
   flex-direction: column;
   padding-top: 25px;
   padding-bottom: 24px;
-  border-top: 1px solid rgba(28, 51, 116, 0.20);
-  border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+  border-top: 1px solid rgba(28, 51, 116, 0.2);
+  border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 
   &:not(:first-child) {
     border-top: none;
@@ -215,7 +215,6 @@
 }
 
 .faq__item.is-active {
-
   & .faq__item-inner {
     margin-bottom: 8px;
 

@@ -13,12 +13,11 @@
 
   &--form,
   &--contacts {
-    border-top: 1px solid #74819C;
+    border-top: 1px solid #74819c;
     flex: 0 1 50%;
 
     @include vp-1365 {
       flex: 0 1 100%;
-
     }
   }
 }

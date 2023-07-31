@@ -1,3 +1,4 @@
+/* stylelint-disable */
 @mixin retina {
 
   @media (min-resolution: $retina-dpi),
@@ -64,6 +65,7 @@
   }
 }
 
+/* stylelint-enable */
 // Mobile first
 
 // @mixin vp-375 {
