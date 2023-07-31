@@ -1,11 +1,11 @@
 .nav {
-  margin-left: 23.84%;
-  margin-right: 22.93%;
+  margin-left: 23.02%;
+  margin-right: 22.07%;
 
   @include vp-1365 {
     padding-top: 3px;
-    margin-left: 9.14%;
-    margin-right: 6.73%;
+    margin-left: 7.67%;
+    margin-right: 5.31%;
   }
 
   @include vp-767 {
@@ -20,15 +20,16 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 40px;
-  width: 431px;
+  column-gap: 20px;
+  width: 451px;
 
   @include vp-1365 {
-    column-gap: 30px;
-    width: 391px;
+    column-gap: 10px;
+    width: 411px;
   }
 
   @include vp-767 {
+    width: auto;
     display: grid;
     grid-template-columns: repeat(2, 130px);
     grid-template-rows: repeat(3, auto);
@@ -76,8 +77,24 @@
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
+  position: relative;
+  padding: 5px 10px;
 
   @include vp-767 {
     font-size: 16px;
+    margin-left: -10px;
+  }
+
+  @include hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  @include focus {
+    border: 1px solid $color-default-white;
+  }
+
+  &--disabled {
+    opacity: 0.4;
+    pointer-events: none;
   }
 }

@@ -46,10 +46,10 @@
               </div>
               <div class="hero__col hero__col--right">
                 <picture>
-                  <!-- <source type="image/webp" media="(min-width: 1365px)"
+                  <source type="image/webp" media="(min-width: 1365px)"
                     srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 767px)"
-                    srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x"> -->
+                    srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
                   <source media="(min-width: 1365px)" srcset="img/hero-desktop.jpg 1x, img/hero-desktop@2x.jpg 2x">
                   <source media="(max-width: 1365px)" srcset="img/hero-tablet.jpg 1x, img/hero-tablet@2x.jpg 2x">
                   <img src="img/hero-desktop.jpg" srcset="img/hero-desktop@2x.jpg 2x" alt="Изображение спортсмена.">
@@ -76,9 +76,12 @@
               </div>
               <div class="gym__col gym__col--right">
                 <picture>
-                  <!-- <source type="image/webp" media="(min-width: 1365px)" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 767px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x"> -->
+                  <source type="image/webp" media="(min-width: 1365px)"
+                    srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 767px)"
+                    srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
                   <source media="(min-width: 1365px)" srcset="img/gym-desktop.jpg 1x, img/gym-desktop@2x.jpg 2x">
                   <source media="(min-width: 767px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
                   <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
@@ -87,22 +90,23 @@
               </div>
             </div>
             <div class="gym__video">
-              <div class="video">
-                <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
-                  <picture>
-                    <!-- <source type="image/webp" media="(min-width: 1365px)" srcset="img/video-preview-desktop.webp 1x, img/video-preview-desktop@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 767px)" srcset="img/video-preview-tablet.webp 1x, img/video-preview-tablet@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/video-preview-mobile.webp 1x, img/video-preview-mobile@2x.webp 2x"> -->
-                    <source media="(min-width: 1365px)"
-                      srcset="img/video-preview-desktop.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
-                    <source media="(min-width: 767px)"
-                      srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="img/video-preview-mobile.jpg 1x, img/video-preview-mobile@2x.jpg 2x">
-                    <img src="img/video-preview-desktop.jpg" srcset="img/video-preview-desktop@2x.jpg 2x"
-                      alt="Бесплатные интерактивные онлайн-курсы">
-                  </picture>
-                </a>
+              <div class="video" data-id="video" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1365px)"
+                    srcset="img/video-preview-desktop.webp 1x, img/video-preview-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 767px)"
+                    srcset="img/video-preview-tablet.webp 1x, img/video-preview-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/video-preview-mobile.webp 1x, img/video-preview-mobile@2x.webp 2x">
+                  <source media="(min-width: 1365px)"
+                    srcset="img/video-preview-desktop.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
+                  <source media="(min-width: 767px)"
+                    srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/video-preview-mobile.jpg 1x, img/video-preview-mobile@2x.jpg 2x">
+                  <img src="img/video-preview-desktop.jpg" srcset="img/video-preview-desktop@2x.jpg 2x"
+                    alt="Бесплатные интерактивные онлайн-курсы">
+                </picture>
                 <button class="video__btn" aria-label="Запусутить видео">
                 </button>
               </div>
@@ -259,9 +263,12 @@
               </div>
               <div class="games__col games__col--right">
                 <picture>
-                  <!-- <source type="image/webp" media="(min-width: 1365px)" srcset="img/games-desktop.webp 1x, img/games-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 767px)" srcset="img/games-tablet.webp 1x, img/games-tablet@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/games-mobile.webp 1x, img/games-mobile@2x.webp 2x"> -->
+                  <source type="image/webp" media="(min-width: 1365px)"
+                    srcset="img/games-desktop.webp 1x, img/games-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 767px)"
+                    srcset="img/games-tablet.webp 1x, img/games-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/games-mobile.webp 1x, img/games-mobile@2x.webp 2x">
                   <source media="(min-width: 1365px)" srcset="img/games-desktop.jpg 1x, img/games-desktop@2x.jpg 2x">
                   <source media="(min-width: 767px)" srcset="img/games-tablet.jpg 1x, img/games-tablet@2x.jpg 2x">
                   <source media="(max-width: 767px)" srcset="img/games-mobile.jpg 1x, img/games-mobile@2x.jpg 2x">
@@ -277,7 +284,7 @@
             <div class="trainers__wrapper swiper-wrapper">
               <div class="trainers__slide swiper-slide slide">
                 <picture>
-                  <!-- <source type="image/webp" srcset="img/trainers/trainer-1.webp 1x, img/trainers/trainer-1@2x.webp 2x"> -->
+                  <source type="image/webp" srcset="img/trainers/trainer-1.webp 1x, img/trainers/trainer-1@2x.webp 2x">
                   <img src="img/trainers/trainer-1.jpg" srcset="img/trainers/trainer-1@2x.jpg 2x" alt="Анна Павлова">
                 </picture>
                 <p class="slide__name">Анна Павлова</p>
@@ -293,7 +300,7 @@
               </div>
               <div class="trainers__slide swiper-slide slide">
                 <picture>
-                  <!-- <source type="image/webp" srcset="img/trainers/trainer-2.webp 1x, img/trainers/trainer-2@2x.webp 2x"> -->
+                  <source type="image/webp" srcset="img/trainers/trainer-2.webp 1x, img/trainers/trainer-2@2x.webp 2x">
                   <img src="img/trainers/trainer-2.jpg" srcset="img/trainers/trainer-2@2x.jpg 2x" alt="Алексей Лавров">
                 </picture>
                 <p class="slide__name">Алексей Лавров</p>
@@ -309,7 +316,7 @@
               </div>
               <div class="trainers__slide swiper-slide slide">
                 <picture>
-                  <!-- <source type="image/webp" srcset="img/trainers/trainer-3.webp 1x, img/trainers/trainer-3@2x.webp 2x"> -->
+                  <source type="image/webp" srcset="img/trainers/trainer-3.webp 1x, img/trainers/trainer-3@2x.webp 2x">
                   <img src="img/trainers/trainer-3.jpg" srcset="img/trainers/trainer-3@2x.jpg 2x"
                     alt="Александр Пашков">
                 </picture>
@@ -326,7 +333,7 @@
               </div>
               <div class="trainers__slide swiper-slide slide">
                 <picture>
-                  <!-- <source type="image/webp" srcset="img/trainers/trainer-4.webp 1x, img/trainers/trainer-4@2x.webp 2x"> -->
+                  <source type="image/webp" srcset="img/trainers/trainer-4.webp 1x, img/trainers/trainer-4@2x.webp 2x">
                   <img src="img/trainers/trainer-4.jpg" srcset="img/trainers/trainer-4@2x.jpg 2x" alt="Мария Кетова">
                 </picture>
                 <p class="slide__name">Мария Кетова</p>
@@ -342,7 +349,7 @@
               </div>
               <div class="trainers__slide swiper-slide slide">
                 <picture>
-                  <!-- <source type="image/webp" srcset="img/trainers/trainer-1.webp 1x, img/trainers/trainer-1@2x.webp 2x"> -->
+                  <source type="image/webp" srcset="img/trainers/trainer-1.webp 1x, img/trainers/trainer-1@2x.webp 2x">
                   <img src="img/trainers/trainer-1.jpg" srcset="img/trainers/trainer-1@2x.jpg 2x" alt="Анна Павлова">
                 </picture>
                 <p class="slide__name">Анна Павлова</p>
@@ -358,7 +365,7 @@
               </div>
               <div class="trainers__slide swiper-slide slide">
                 <picture>
-                  <!-- <source type="image/webp" srcset="img/trainers/trainer-2.webp 1x, img/trainers/trainer-2@2x.webp 2x"> -->
+                  <source type="image/webp" srcset="img/trainers/trainer-2.webp 1x, img/trainers/trainer-2@2x.webp 2x">
                   <img src="img/trainers/trainer-2.jpg" srcset="img/trainers/trainer-2@2x.jpg 2x" alt="Алексей Лавров">
                 </picture>
                 <p class="slide__name">Алексей Лавров</p>
@@ -374,7 +381,7 @@
               </div>
               <div class="trainers__slide swiper-slide slide">
                 <picture>
-                  <!-- <source type="image/webp" srcset="img/trainers/trainer-3.webp 1x, img/trainers/trainer-3@2x.webp 2x"> -->
+                  <source type="image/webp" srcset="img/trainers/trainer-3.webp 1x, img/trainers/trainer-3@2x.webp 2x">
                   <img src="img/trainers/trainer-3.jpg" srcset="img/trainers/trainer-3@2x.jpg 2x"
                     alt="Александр Пашков">
                 </picture>
@@ -391,7 +398,7 @@
               </div>
               <div class="trainers__slide swiper-slide slide">
                 <picture>
-                  <!-- <source type="image/webp" srcset="img/trainers/trainer-4.webp 1x, img/trainers/trainer-4@2x.webp 2x"> -->
+                  <source type="image/webp" srcset="img/trainers/trainer-4.webp 1x, img/trainers/trainer-4@2x.webp 2x">
                   <img src="img/trainers/trainer-4.jpg" srcset="img/trainers/trainer-4@2x.jpg 2x" alt="Мария Кетова">
                 </picture>
                 <p class="slide__name">Мария Кетова</p>
@@ -496,9 +503,12 @@
                 </div>
                 <div class="actions__item-col actions__item-col--right">
                   <picture>
-                    <!-- <source type="image/webp" media="(min-width: 1365px)" srcset="img/action-desktop.webp 1x, img/action-desktop@2x.webp 2x">
-                          <source type="image/webp" media="(min-width: 767px)" srcset="img/action-tablet.webp 1x, img/action-tablet@2x.webp 2x">
-                         <source type="image/webp" media="(max-width: 767px)" srcset="img/action-mobile.webp 1x, img/action-mobile@2x.webp 2x"> -->
+                    <source type="image/webp" media="(min-width: 1365px)"
+                      srcset="img/action-desktop.webp 1x, img/action-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 767px)"
+                      srcset="img/action-tablet.webp 1x, img/action-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/action-mobile.webp 1x, img/action-mobile@2x.webp 2x">
                     <source media="(min-width: 1365px)"
                       srcset="img/action-desktop.jpg 1x, img/action-desktop@2x.jpg 2x">
                     <source media="(min-width: 767px)" srcset="img/action-tablet.jpg 1x, img/action-tablet@2x.jpg 2x">
@@ -759,10 +769,12 @@
               <div class="reviews__wrapper swiper-wrapper">
                 <div class="reviews__slide swiper-slide review-slide">
                   <div class="review-slide__wrapper">
-                    <picture>
-                      <!-- <source type="image/webp" srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x"> -->
-                      <img src="img/avatar.png" srcset="img/avatar@2x.png 2x" alt="Анна Орлова">
-                    </picture>
+                    <div class="review-slide__img-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x">
+                        <img src="img/avatar.png" srcset="img/avatar@2x.png 2x" alt="Анна Орлова">
+                      </picture>
+                    </div>
                     <h3 class="review-slide__author">Анна Орлова</h3>
                     <p class="review-slide__text">&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что
                       в&nbsp;клубе всегда чисто,
@@ -772,10 +784,12 @@
                 </div>
                 <div class="reviews__slide swiper-slide review-slide">
                   <div class="review-slide__wrapper">
-                    <picture>
-                      <!-- <source type="image/webp" srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x"> -->
-                      <img src="img/avatar.png" srcset="img/avatar@2x.png 2x" alt="Анна Орлова">
-                    </picture>
+                    <div class="review-slide__img-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x">
+                        <img src="img/avatar.png" srcset="img/avatar@2x.png 2x" alt="Анна Орлова">
+                      </picture>
+                    </div>
                     <h3 class="review-slide__author">Анна Орлова</h3>
                     <p class="review-slide__text">&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что
                       в&nbsp;клубе всегда чисто,
@@ -785,10 +799,12 @@
                 </div>
                 <div class="reviews__slide swiper-slide review-slide">
                   <div class="review-slide__wrapper">
-                    <picture>
-                      <!-- <source type="image/webp" srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x"> -->
-                      <img src="img/avatar.png" srcset="img/avatar@2x.png 2x" alt="Анна Орлова">
-                    </picture>
+                    <div class="review-slide__img-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x">
+                        <img src="img/avatar.png" srcset="img/avatar@2x.png 2x" alt="Анна Орлова">
+                      </picture>
+                    </div>
                     <h3 class="review-slide__author">Анна Орлова</h3>
                     <p class="review-slide__text">&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что
                       в&nbsp;клубе всегда чисто,

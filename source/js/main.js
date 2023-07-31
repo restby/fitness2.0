@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-// import {play} from './modules/video-player';
+import {play} from './modules/video-player';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initAccordions} from './modules/accordion/init-accordion';
 import {initSwiper, initSwiperComments} from './vendor/init-swiper';
@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   initTabs();
   initAccordions();
-  // play();
+  play();
   initSwiper();
   initSwiperComments();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

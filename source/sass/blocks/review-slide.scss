@@ -31,7 +31,7 @@
 
   & img {
     margin-top: 8px;
-    grid-area: 1 / 1 / 3 / 2;
+
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -41,6 +41,13 @@
       margin-left: 16px;
       width: 68px;
       height: 68px;
+    }
+  }
+
+  .review-slide__img-wrapper {
+    grid-area: 1 / 1 / 3 / 2;
+
+    @include vp-767 {
       grid-area: 1 / 1 / 2 / 2;
     }
   }
