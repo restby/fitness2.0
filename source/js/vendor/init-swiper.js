@@ -4,7 +4,10 @@ const commentsSwiper = document.querySelector('.reviews__slider');
 const initSwiper = () => {
   if (trainersSwiper) {
     const swiper = new Swiper(trainersSwiper, {
-
+      simulateTouch: false,
+      grabCursor: false,
+      watchOverflow: true,
+      speed: 500,
       loop: true,
       navigation: {
         nextEl: '.trainers__arrow--next',
@@ -15,9 +18,10 @@ const initSwiper = () => {
         320: {
           slidesPerView: 1,
           initialSlide: 3,
+          spaceBetween: 10,
         },
 
-        767: {
+        768: {
           slidesPerView: 2,
           spaceBetween: 30,
           initialSlide: 2,
