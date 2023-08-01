@@ -3,7 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {play} from './modules/video-player';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initAccordions} from './modules/accordion/init-accordion';
-import {initSwiper, initSwiperComments} from './vendor/init-swiper';
+import {initTrainersSlider, initReviewsSlider} from './vendor/init-swiper';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,8 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
   initTabs();
   initAccordions();
   play();
-  initSwiper();
-  initSwiperComments();
+  initTrainersSlider();
+  initReviewsSlider();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
 

@@ -2,7 +2,7 @@
   background: $color-default-white;
   padding: 7px 7px;
 
-  &--active {
+  &.is-active {
     background: linear-gradient(135deg, #d10a42 0%, #0041ca 100%);
   }
 
@@ -24,7 +24,7 @@
   }
 }
 
-.card--active .card__btn {
+.card.is-active .card__btn {
   background: $fill-gradient;
   color: $text-light;
   border: none;

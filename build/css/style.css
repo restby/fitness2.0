@@ -3222,7 +3222,7 @@ button,
   background: #ffffff;
   padding: 7px 7px;
 }
-.card--active {
+.card.is-active {
   background: linear-gradient(135deg, #d10a42 0%, #0041ca 100%);
 }
 .card:hover {
@@ -3243,7 +3243,7 @@ button,
   }
 }
 
-.card--active .card__btn {
+.card.is-active .card__btn {
   background: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
   background: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
   color: #ffffff;

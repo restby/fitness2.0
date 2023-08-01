@@ -1,7 +1,7 @@
 const trainersSwiper = document.querySelector('.trainers__slider');
 const commentsSwiper = document.querySelector('.reviews__slider');
 
-const initSwiper = () => {
+const initTrainersSlider = () => {
   if (trainersSwiper) {
     const swiper = new Swiper(trainersSwiper, {
       simulateTouch: false,
@@ -36,7 +36,7 @@ const initSwiper = () => {
   }
 }
 
-const initSwiperComments = () => {
+const initReviewsSlider = () => {
   if (commentsSwiper) {
     const swiper = new Swiper(commentsSwiper, {
 
@@ -51,4 +51,4 @@ const initSwiperComments = () => {
   }
 }
 
-export { initSwiper, initSwiperComments }
+export { initTrainersSlider, initReviewsSlider }
