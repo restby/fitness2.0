@@ -15,11 +15,11 @@
 }
 
 .trainers__slider {
-  width: 1160px;
   margin: 0 auto;
   position: relative;
+  width: 1160px;
 
-  @include vp-1199 {
+  @include vp-1365 {
     width: 566px;
   }
 

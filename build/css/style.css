@@ -3664,11 +3664,11 @@ button,
 }
 
 .trainers__slider {
-  width: 1160px;
   margin: 0 auto;
   position: relative;
+  width: 1160px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1365px) {
   .trainers__slider {
     width: 566px;
   }
@@ -5410,6 +5410,10 @@ button,
           flex: 0 1 50%;
 }
 
+.form__field {
+  position: relative;
+}
+
 .form__field input {
   width: 100%;
   min-height: 27px;
@@ -5456,6 +5460,34 @@ button,
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
+}
+
+.form__field .is-valid,
+.form__field .is-invalid {
+  position: absolute;
+  font-size: 12px;
+  line-height: normal;
+  font-weight: 300;
+  color: #ffffff;
+  left: 0;
+  top: 27px;
+}
+@media (max-width: 1199px) {
+  .form__field .is-valid,
+.form__field .is-invalid {
+    left: -3px;
+  }
+}
+@media (max-width: 767px) {
+  .form__field .is-valid,
+.form__field .is-invalid {
+    top: 70px;
+    left: 1px;
+  }
+}
+
+.form__field .is-invalid {
+  color: #ff121f;
 }
 
 .contacts {
