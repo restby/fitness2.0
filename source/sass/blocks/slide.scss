@@ -38,6 +38,12 @@
   &:hover .slide__name {
     display: none;
   }
+
+  &:active .slide__text {
+    @include vp-767 {
+      top: 0;
+    }
+  }
 }
 
 .slide__name,

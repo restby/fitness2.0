@@ -3815,6 +3815,11 @@ button,
 .slide:focus .slide__name, .slide:hover .slide__name {
   display: none;
 }
+@media (max-width: 767px) {
+  .slide:active .slide__text {
+    top: 0;
+  }
+}
 
 .slide__name,
 .slide__text-name {
@@ -4668,13 +4673,13 @@ button,
 @media (max-width: 1199px) {
   .faq {
     padding-top: 100px;
-    padding-bottom: 77px;
+    padding-bottom: 102px;
   }
 }
 @media (max-width: 767px) {
   .faq {
     padding-top: 73px;
-    padding-bottom: 29px;
+    padding-bottom: 73px;
   }
 }
 
@@ -5057,7 +5062,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews__arrow {
-    margin-top: 48px;
+    margin-top: 46px;
   }
 }
 @media (max-width: 767px) {
@@ -5074,13 +5079,18 @@ button,
 .reviews__arrow--prev {
   left: -3px;
 }
+@media (max-width: 1199px) {
+  .reviews__arrow--prev {
+    left: -20px;
+  }
+}
 @media (max-width: 767px) {
   .reviews__arrow--prev {
     left: -10px;
   }
 }
 .reviews__arrow--next {
-  right: -3px;
+  right: -20px;
 }
 @media (max-width: 767px) {
   .reviews__arrow--next {
@@ -5355,7 +5365,7 @@ button,
   .form {
     padding: 15px;
     padding-top: 64px;
-    padding-bottom: 66px;
+    padding-bottom: 69px;
   }
 }
 
