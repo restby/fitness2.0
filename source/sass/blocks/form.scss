@@ -87,6 +87,8 @@
 }
 
 .form__field {
+  position: relative;
+
   &--name {
     flex: 0 1 50%;
   }
@@ -94,10 +96,6 @@
   &--phone {
     flex: 0 1 50%;
   }
-}
-
-.form__field {
-  position: relative;
 }
 
 .form__field input {
