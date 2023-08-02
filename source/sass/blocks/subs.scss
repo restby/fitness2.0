@@ -102,6 +102,26 @@
   @include vp-767 {
     font-size: 16px;
   }
+
+  @include hover-focus {
+    color: #102654;
+    outline: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      transform: translateY(13px);
+      left: 0;
+      background-color: #d10a42;
+
+      @include vp-767 {
+        transform: translateY(15px);
+      }
+    }
+  }
 }
 
 .sub__tabs-element[data-tabs="element"] {

@@ -20,6 +20,7 @@
     @include hover-focus {
       background-color: $color-default-white;
       color: $text-action;
+      outline: none;
     }
 
     @include active {

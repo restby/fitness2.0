@@ -51,19 +51,19 @@
 
   &--free {
     grid-area: 1 / 2 / 2 / 3;
+    min-height: 211px;
 
     @include vp-1199 {
       grid-area: 2 / 1 / 3 / 2;
-      min-height: 211px;
     }
   }
 
   &--discount {
     grid-area: 2 / 2 / 3 / 3;
+    min-height: 211px;
 
     @include vp-1199 {
       grid-area: 2 / 2 / 3 / 3;
-      min-height: 211px;
     }
   }
 }
@@ -110,19 +110,6 @@
 
     @include vp-767 {
       text-align: center;
-    }
-  }
-
-  & .actions__item-link {
-    margin-top: auto;
-    color: $text-light;
-    font-size: 14px;
-    letter-spacing: 0.7px;
-
-    @include vp-767 {
-      margin-top: 0;
-      text-align: center;
-      align-self: center;
     }
   }
 
@@ -184,17 +171,17 @@
   background-color: $color-default-white;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding: 35px;
+  min-height: calc(211px - 14px);
+  padding-right: 35px;
   padding-left: 28px;
   padding-top: 17px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   align-items: flex-start;
 
   @include vp-767 {
     align-items: stretch;
     padding-top: 28px;
-    padding-bottom: 41px;
+    padding-bottom: 39px;
     padding-left: 35px;
   }
 }
@@ -220,14 +207,20 @@
   color: #1c3374;
 
   @include vp-767 {
-    margin-bottom: 27px;
     text-align: center;
   }
 }
 
 .actions__item-link {
   margin-top: auto;
-  color: #1c3374;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30px;
+  padding-left: 9px;
+  padding-right: 9px;
+  border: 1px solid transparent;
+  color: $text-dark;
   font-size: 12px;
   font-weight: 700;
   line-height: normal;
@@ -239,10 +232,44 @@
     position: absolute;
     content: "";
     bottom: -2px;
-    left: 0;
-    width: 100%;
+    left: 9px;
+    right: 9px;
     height: 1px;
-    background-color: #1c3374;
+    background-color: $text-dark;
+  }
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include focus {
+    outline: none;
+    border: 1px solid $text-dark;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    text-align: center;
+    align-self: center;
+    justify-self: end;
+  }
+}
+
+.actions__item-link--main {
+  margin-top: auto;
+  color: $text-light;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+
+  &::after {
+    background-color: $color-default-white;
+  }
+
+  @include focus {
+    border: 1px solid $text-light;
   }
 
   @include vp-767 {
