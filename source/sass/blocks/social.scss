@@ -30,15 +30,28 @@
   border-radius: 50%;
 
   @include hover-focus {
+    outline: none;
     background-color: $fill-action;
+
+    & svg {
+      color: $text-light;
+    }
   }
 
   @include active {
     background-color: $stroke-dark;
+
+    & svg {
+      color: $text-light;
+    }
   }
 
   &:active {
     background-color: $stroke-dark;
+
+    & svg {
+      color: $text-light;
+    }
   }
 
   &--disabled {
@@ -49,17 +62,5 @@
 
   & svg {
     color: $color-darker;
-
-    @include hover-focus {
-      color: $text-light;
-    }
-
-    @include active {
-      color: $text-light;
-    }
-
-    &:active {
-      color: $text-light;
-    }
   }
 }

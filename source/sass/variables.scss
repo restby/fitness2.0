@@ -31,8 +31,8 @@ $color-gradient: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32deg, #b8
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-neon-blue: #2c39f2;
-$color-torch-red: #ff1553;
+// $color-neon-blue: #2c39f2;
+// $color-torch-red: #ff1553;
 
 // Gradient
 
@@ -50,7 +50,7 @@ $ff-rouble: "Rouble", "Arial", sans-serif;
 $ff-robotoCondensed: "RobotoCondensed", "Arial", sans-serif;
 $ff-alumniSans: "AlumniSans", "Arial", sans-serif;
 
-$ff-placeholder: $ff-robotoCondensed, "Arial", sans-serif;
+$ff-placeholder: $ff-robotoCondensed;
 
 // Animation
 // ---------------------------------

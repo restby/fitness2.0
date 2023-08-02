@@ -4,26 +4,5 @@
   display: flex;
   flex-direction: column;
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 1921px;
-    right: -34px;
-    width: 321px;
-    height: 414px;
-    background-image: url("../../img/decor-desktop.png");
-    z-index: 2;
 
-    @include vp-1199 {
-      width: 384px;
-      height: 374px;
-      top: 2868px;
-      right: -37px;
-      background-image: url("../../img/decor-tablet.png");
-    }
-
-    @include vp-767 {
-      display: none;
-    }
-  }
 }

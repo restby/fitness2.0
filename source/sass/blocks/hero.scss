@@ -105,6 +105,7 @@
   margin: 0;
   margin-top: 122px;
   margin-right: 17px;
+  margin-bottom: 10px;
   padding: 0;
   list-style-type: none;
 
@@ -151,6 +152,7 @@
 .hero img {
   width: 500px;
   height: 556px;
+  object-fit: cover;
 
   @include vp-1199 {
     width: 324px;

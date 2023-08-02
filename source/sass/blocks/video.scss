@@ -65,6 +65,7 @@
     height: 100px;
     top: 0;
     left: 0;
+    background-size: cover;
     background-image: url("../../img/svg/video-btn-default.svg");
     background-repeat: no-repeat;
   }
@@ -72,6 +73,11 @@
   @include vp-1199 {
     width: 73px;
     height: 73px;
+
+    &::before {
+      width: 73px;
+      height: 73px;
+    }
   }
 }
 

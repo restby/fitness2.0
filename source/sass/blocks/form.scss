@@ -5,6 +5,11 @@
   padding-right: 170px;
   min-height: 337px;
 
+  & form {
+    width: 100%;
+    max-width: 683px;
+  }
+
   & button[type="submit"] {
     width: 100%;
     min-height: 56px;
@@ -87,6 +92,8 @@
 }
 
 .form__field {
+  position: relative;
+
   &--name {
     flex: 0 1 50%;
   }
@@ -94,10 +101,6 @@
   &--phone {
     flex: 0 1 50%;
   }
-}
-
-.form__field {
-  position: relative;
 }
 
 .form__field input {

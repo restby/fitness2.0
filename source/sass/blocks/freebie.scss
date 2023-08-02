@@ -1,5 +1,6 @@
 .freebie__row {
   display: flex;
+  justify-content: center;
 
   @include vp-1199 {
     flex-direction: column;
@@ -7,8 +8,15 @@
 }
 
 .freebie__col {
+  display: flex;
+
   &--form {
+    justify-content: end;
     background-color: $color-dark;
+  }
+
+  &--contacts {
+    justify-content: start;
   }
 
   &--form,

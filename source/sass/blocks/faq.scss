@@ -64,7 +64,7 @@
   border: 1px solid rgba(16, 38, 84, 0.2);
 
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 100%;
   text-transform: capitalize;
 
@@ -127,7 +127,7 @@
 .faq__item-title {
   margin: 0;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 120%;
 
   @include vp-767 {
