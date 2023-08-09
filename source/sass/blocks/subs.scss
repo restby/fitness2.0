@@ -26,13 +26,13 @@
   }
 }
 
-.sub__tabs {
+.subs__tabs {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.sub__tabs-controls {
+.subs__tabs-controls {
   display: flex;
   justify-content: center;
   column-gap: 46px;
@@ -66,7 +66,7 @@
   }
 }
 
-.sub__tabs-control {
+.subs__tabs-control {
   padding: 0;
   color: rgba(16, 38, 84, 0.5);
   font-size: 20px;
@@ -124,7 +124,7 @@
   }
 }
 
-.sub__tabs-element[data-tabs="element"] {
+.subs__tabs-element[data-tabs="element"] {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -145,7 +145,7 @@
   }
 }
 
-.sub__tabs-card {
+.subs__tabs-card {
   max-width: 360px;
 
   @include vp-1199 {
