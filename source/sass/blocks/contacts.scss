@@ -3,10 +3,11 @@
   padding-right: 159px;
   padding-left: 120px;
   padding-bottom: 10px;
+  justify-content: center;
 
   @include vp-1199 {
     padding-top: 60px;
-    padding-bottom: 62px;
+    padding-bottom: 60px;
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -15,7 +16,6 @@
     padding-top: 63px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 61px;
   }
 }
 
