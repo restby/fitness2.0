@@ -2391,7 +2391,7 @@ button,
 @media (max-width: 1199px) {
   .page-header {
     padding-top: 35px;
-    padding-bottom: 83px;
+    padding-bottom: 82px;
     background-color: #0041ca;
     background-image: url("../../img/hero-bg-tablet.png");
   }
@@ -3061,6 +3061,7 @@ button,
 @media (max-width: 1199px) {
   .subs {
     padding-top: 101px;
+    padding-bottom: 98px;
   }
 }
 @media (max-width: 767px) {
@@ -3144,7 +3145,7 @@ button,
     -webkit-column-gap: 45px;
        -moz-column-gap: 45px;
             column-gap: 45px;
-    margin-bottom: 48px;
+    margin-bottom: 49px;
   }
 }
 
@@ -3455,7 +3456,7 @@ button,
 }
 @media (max-width: 1199px) {
   .games {
-    padding-top: 79px;
+    padding-top: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -3497,7 +3498,7 @@ button,
   .games__wrapper::after {
     width: 384px;
     height: 374px;
-    top: -421px;
+    top: -419px;
     right: -82px;
     background-size: 424px auto;
     background-image: url("../../img/decor-tablet.png");
@@ -3784,7 +3785,7 @@ button,
 }
 
 .trainers__title {
-  margin-bottom: 49px;
+  margin-bottom: 48px;
 }
 @media (max-width: 1199px) {
   .trainers__title {
@@ -4425,7 +4426,7 @@ button,
     padding-right: 74px;
     padding-top: 19px;
     padding-bottom: 43px;
-    margin-top: 23px;
+    margin-top: 22px;
     margin-bottom: 5px;
   }
 }
@@ -4457,12 +4458,12 @@ button,
 }
 
 .actions__title {
-  margin-bottom: 34px;
+  margin-bottom: 35px;
   text-align: center;
 }
 @media (max-width: 1199px) {
   .actions__title {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
   }
 }
 @media (max-width: 767px) {
@@ -5180,7 +5181,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews__title {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
   }
 }
 @media (max-width: 767px) {
@@ -5886,12 +5887,11 @@ button,
   -ms-flex-negative: 0;
       flex-shrink: 0;
   background-color: #030a1a;
-  padding-top: 41px;
+  padding-top: 42px;
   padding-bottom: 36px;
 }
 @media (max-width: 1199px) {
   .page-footer {
-    padding-top: 42px;
     padding-bottom: 49px;
   }
 }

@@ -1,11 +1,10 @@
 .page-footer {
   flex-shrink: 0;
   background-color: $color-darker;
-  padding-top: 41px;
+  padding-top: 42px;
   padding-bottom: 36px;
 
   @include vp-1199 {
-    padding-top: 42px;
     padding-bottom: 49px;
   }
 
