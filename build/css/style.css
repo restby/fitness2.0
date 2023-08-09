@@ -1616,9 +1616,6 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
 }
 
 .btn {
@@ -3061,7 +3058,7 @@ button,
 @media (max-width: 1199px) {
   .subs {
     padding-top: 101px;
-    padding-bottom: 98px;
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -3539,6 +3536,13 @@ button,
     padding-bottom: 50px;
     padding-left: 44px;
     padding-right: 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .games__col--right img {
@@ -3747,6 +3751,10 @@ button,
     min-height: 41px;
     font-size: 10px;
     letter-spacing: 0.5px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-width: 347px;
   }
 }
 
@@ -3754,6 +3762,9 @@ button,
   padding-top: 106px;
   padding-bottom: 105px;
   position: relative;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 @media (max-width: 1199px) {
   .trainers {
@@ -4020,7 +4031,7 @@ button,
 .features {
   background-color: #f8f9fc;
   padding-top: 108px;
-  padding-bottom: 122px;
+  padding-bottom: 123px;
 }
 @media (max-width: 1199px) {
   .features {
@@ -4458,7 +4469,7 @@ button,
 }
 
 .actions__title {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   text-align: center;
 }
 @media (max-width: 1199px) {
@@ -5092,7 +5103,7 @@ button,
 }
 
 .faq__item.is-active .faq__item-inner {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 @media (max-width: 767px) {
   .faq__item.is-active .faq__item-inner {
@@ -5448,15 +5459,7 @@ button,
   display: flex;
 }
 .freebie__col--form {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
   background-color: #102654;
-}
-.freebie__col--contacts {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
 }
 .freebie__col--form, .freebie__col--contacts {
   border-top: 1px solid #74819c;
@@ -5484,7 +5487,20 @@ button,
 }
 .form form {
   width: 100%;
-  max-width: 683px;
+  max-width: 414px;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (max-width: 1199px) {
+  .form form {
+    max-width: 100%;
+  }
 }
 .form button[type=submit] {
   width: 100%;
@@ -5534,6 +5550,14 @@ button,
   pointer-events: none;
 }
 @media (max-width: 1199px) {
+  .form button[type=submit] {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-width: 472px;
+  }
+}
+@media (max-width: 1199px) {
   .form {
     padding-top: 62px;
     padding-left: 132px;
@@ -5563,6 +5587,7 @@ button,
     -webkit-column-gap: 60px;
        -moz-column-gap: 60px;
             column-gap: 60px;
+    margin-bottom: 26px;
   }
 }
 @media (max-width: 767px) {
@@ -5711,10 +5736,12 @@ button,
 
 .contacts__container {
   width: 100%;
-  max-width: 683px;
+  max-width: 418px;
+  margin-right: auto;
 }
 @media (max-width: 1199px) {
   .contacts__container {
+    max-width: 100%;
     padding-left: 88px;
     padding-right: 10px;
   }

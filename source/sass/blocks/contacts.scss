@@ -21,9 +21,11 @@
 
 .contacts__container {
   width: 100%;
-  max-width: 683px;
+  max-width: 418px;
+  margin-right: auto;
 
   @include vp-1199 {
+    max-width: 100%;
     padding-left: 88px;
     padding-right: 10px;
   }

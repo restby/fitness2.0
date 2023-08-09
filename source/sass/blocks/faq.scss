@@ -216,7 +216,7 @@
 
 .faq__item.is-active {
   & .faq__item-inner {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 
     @include vp-767 {
       margin-bottom: 12px;

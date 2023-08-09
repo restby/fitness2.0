@@ -76,6 +76,8 @@
       padding-bottom: 50px;
       padding-left: 44px;
       padding-right: 44px;
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -250,5 +252,7 @@
     min-height: 41px;
     font-size: 10px;
     letter-spacing: 0.5px;
+    align-self: center;
+    max-width: 347px;
   }
 }
