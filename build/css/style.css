@@ -3751,10 +3751,6 @@ button,
     min-height: 41px;
     font-size: 10px;
     letter-spacing: 0.5px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    max-width: 347px;
   }
 }
 
@@ -4673,7 +4669,6 @@ button,
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
-    max-height: 299px;
     overflow: hidden;
   }
 }
@@ -5548,14 +5543,6 @@ button,
 .form button[type=submit]:disabled {
   opacity: 0.5;
   pointer-events: none;
-}
-@media (max-width: 1199px) {
-  .form button[type=submit] {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    max-width: 472px;
-  }
 }
 @media (max-width: 1199px) {
   .form {
