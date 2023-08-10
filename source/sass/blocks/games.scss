@@ -254,3 +254,24 @@
     letter-spacing: 0.5px;
   }
 }
+
+.webp .games__wrapper {
+
+  &::after {
+    background-image: url("../../img/decor-desktop.webp");
+
+    @include vp-1200 {
+      @include retina {
+        background-image: url("../../img/decor-desktop@2x.webp");
+      }
+    }
+
+    @include vp-1199 {
+      background-image: url("../../img/decor-tablet.webp");
+
+      @include retina {
+        background-image: url("../../img/decor-tablet@2x.webp");
+      }
+    }
+  }
+}

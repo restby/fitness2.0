@@ -2479,6 +2479,40 @@ button,
   }
 }
 
+.webp .page-header {
+  background-image: url("../../img/hero-bg-desktop.webp");
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .webp .page-header {
+    background-image: url("../../img/hero-bg-desktop@2x.webp");
+  }
+}
+@media (max-width: 1199px) {
+  .webp .page-header {
+    background-image: url("../../img/hero-bg-tablet.webp");
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .webp .page-header {
+    background-image: url("../../img/hero-bg-tablet@2x.webp");
+  }
+}
+@media (max-width: 767px) {
+  .webp .page-header {
+    background-image: url("../../img/hero-bg-mobile.webp");
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .webp .page-header {
+    background-image: url("../../img/hero-bg-mobile@2x.webp");
+  }
+}
+@media (min-width: 520px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 520px) and (max-width: 767px) and (min-resolution: 144dpi), (min-width: 520px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .webp .page-header {
+    background-image: url("../../img/hero-bg-tablet@2x.webp");
+  }
+}
+
 .logo--header img {
   width: 122px;
   height: 44px;
@@ -3751,6 +3785,25 @@ button,
     min-height: 41px;
     font-size: 10px;
     letter-spacing: 0.5px;
+  }
+}
+
+.webp .games__wrapper::after {
+  background-image: url("../../img/decor-desktop.webp");
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .webp .games__wrapper::after {
+    background-image: url("../../img/decor-desktop@2x.webp");
+  }
+}
+@media (max-width: 1199px) {
+  .webp .games__wrapper::after {
+    background-image: url("../../img/decor-tablet.webp");
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .webp .games__wrapper::after {
+    background-image: url("../../img/decor-tablet@2x.webp");
   }
 }
 
