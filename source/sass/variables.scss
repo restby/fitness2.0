@@ -25,8 +25,9 @@ $color-grey: #f8f9fc;
 $color-red: #ed0233;
 $color-dark: #102654;
 $color-darker: #030a1a;
-$color-gradient: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32deg, #b80027 313deg);
-
+$gradient-desktop: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 20deg, #b80027 295deg, #003d85);
+$gradient-tablet: conic-gradient(from 155deg at 20.70% 35.74%, #003d85 20deg, #b80027 295deg, #003d85);
+$gradient-mobile: conic-gradient(from 167deg at 35.31% 34.22%, #003d85 20deg, #b80027 295deg, #003d85);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482

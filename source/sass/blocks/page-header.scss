@@ -2,56 +2,18 @@
   flex: 1;
   padding-top: 30px;
   padding-bottom: 51px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
-  background-color: #0041ca;
-  background-image: url("../../img/hero-bg-desktop.png");
-
-  @include vp-1200 {
-    @include retina {
-      background-position: -220px -257px;
-      background-size: 2732px auto;
-      background-color: #0041ca;
-      background-image: url("../../img/hero-bg-desktop@2x.png");
-    }
-  }
+  background: #0041ca $gradient-desktop;
 
   @include vp-1199 {
     padding-top: 35px;
     padding-bottom: 82px;
-    background-color: #0041ca;
-    background-image: url("../../img/hero-bg-tablet.png");
-
-    @include retina {
-      background-position: -158px -198px;
-      background-size: 1536px auto;
-      background-color: #0041ca;
-      background-image: url("../../img/hero-bg-tablet@2x.png");
-    }
+    background: #0041ca $gradient-tablet;
   }
 
   @include vp-767 {
     padding-top: 15px;
     padding-bottom: 78px;
-    background-color: #0041ca;
-    background-image: url("../../img/hero-bg-mobile.png");
-
-    @include retina {
-      background-position: -113px -168px;
-      background-size: 640px auto;
-      background-color: #0041ca;
-      background-image: url("../../img/hero-bg-mobile@2x.png");
-    }
-  }
-
-  @include vp-520-767 {
-    @include retina {
-      background-position: -158px -198px;
-      background-size: 1536px auto;
-      background-color: #0041ca;
-      background-image: url("../../img/hero-bg-tablet@2x.png");
-    }
+    background: #0041ca $gradient-mobile;
   }
 }
 
@@ -92,37 +54,5 @@
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.4px;
-  }
-}
-
-.webp .page-header {
-  background-image: url("../../img/hero-bg-desktop.webp");
-
-  @include vp-1200 {
-    @include retina {
-      background-image: url("../../img/hero-bg-desktop@2x.webp");
-    }
-  }
-
-  @include vp-1199 {
-    background-image: url("../../img/hero-bg-tablet.webp");
-
-    @include retina {
-      background-image: url("../../img/hero-bg-tablet@2x.webp");
-    }
-  }
-
-  @include vp-767 {
-    background-image: url("../../img/hero-bg-mobile.webp");
-
-    @include retina {
-      background-image: url("../../img/hero-bg-mobile@2x.webp");
-    }
-  }
-
-  @include vp-520-767 {
-    @include retina {
-      background-image: url("../../img/hero-bg-tablet@2x.webp");
-    }
   }
 }
