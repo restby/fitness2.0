@@ -89,6 +89,8 @@
 
 .contacts__item {
   flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
 
   &:nth-child(2n) {
     flex: 0 1 50%;
@@ -152,6 +154,7 @@
   &--phone {
     color: inherit;
     text-decoration: none;
+    max-width: 90px;
 
     @include hover {
       opacity: 0.8;
@@ -159,12 +162,21 @@
 
     &:active {
       opacity: 0.3;
+    }
+
+    @include vp-1199 {
+      max-width: 116px;
+    }
+
+    @include vp-767 {
+      max-width: auto;
     }
   }
 
   &--email {
     color: inherit;
     text-decoration: none;
+    max-width: 110px;
 
     @include hover {
       opacity: 0.8;
@@ -172,6 +184,14 @@
 
     &:active {
       opacity: 0.3;
+    }
+
+    @include vp-1199 {
+      max-width: 142px;
+    }
+
+    @include vp-767 {
+      max-width: auto;
     }
   }
 

@@ -27,7 +27,7 @@ const initTrainersSlider = () => {
           initialSlide: 2,
         },
 
-        1365: {
+        1199: {
           slidesPerView: 4,
           spaceBetween: 40,
         }

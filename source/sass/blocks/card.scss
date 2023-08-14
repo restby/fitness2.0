@@ -110,6 +110,7 @@
     transform: translateY(-50%);
     width: 30px;
     height: 42px;
+    background-repeat: no-repeat;
     background-image: url("../../img/svg/rouble.svg");
 
     @include vp-767 {
