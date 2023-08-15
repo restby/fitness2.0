@@ -31,15 +31,17 @@
             <a class="page-header__tel" href="tel:88005555555">8-800-555-55-55</a>
           </div>
           <section class="hero">
-            <div class="hero__wrapper">
+            <div class="hero__row">
               <div class="hero__col hero__col--left">
-                <span class="hero__text">омск</span>
-                <h1 class="hero__title">Фитнес центр</h1>
-                <ul class="hero__list">
-                  <li class="hero__item">Тренажёрный зал</li>
-                  <li class="hero__item">Групповые занятия</li>
-                  <li class="hero__item">Кардио-зона</li>
-                </ul>
+                <div class="hero__inner">
+                  <span class="hero__text">омск</span>
+                  <h1 class="hero__title">Фитнес центр</h1>
+                  <ul class="hero__list">
+                    <li class="hero__item">Тренажёрный зал</li>
+                    <li class="hero__item">Групповые занятия</li>
+                    <li class="hero__item">Кардио-зона</li>
+                  </ul>
+                </div>
                 <a class="hero__btn btn btn--on-dark" href="#subs">Купить абонемент</a>
               </div>
               <div class="hero__col hero__col--right">
@@ -444,19 +446,19 @@
                 </div>
               </div>
             </div>
+            <button class="trainers__arrow trainers__arrow--prev swiper-arrow swiper-button-prev" type="button"
+              aria-label="Предыдущий слайд.">
+              <svg width="16" height="32">
+                <use href="img/sprite.svg#icon-prev-arrow"></use>
+              </svg>
+            </button>
+            <button class="trainers__arrow trainers__arrow--next swiper-arrow swiper-button-next" type="button"
+              aria-label="Следующий слайд.">
+              <svg width="16" height="32">
+                <use href="img/sprite.svg#icon-next-arrow"></use>
+              </svg>
+            </button>
           </div>
-          <button class="trainers__arrow trainers__arrow--prev swiper-arrow swiper-button-prev" type="button"
-            aria-label="Предыдущий слайд.">
-            <svg width="16" height="32">
-              <use href="img/sprite.svg#icon-prev-arrow"></use>
-            </svg>
-          </button>
-          <button class="trainers__arrow trainers__arrow--next swiper-arrow swiper-button-next" type="button"
-            aria-label="Следующий слайд.">
-            <svg width="16" height="32">
-              <use href="img/sprite.svg#icon-next-arrow"></use>
-            </svg>
-          </button>
         </section>
         <section class="features">
           <div class="features__container">
@@ -812,8 +814,8 @@
         </section>
         <section class="reviews">
           <div class="reviews__container">
+            <h2 class="section-title reviews__title">Отзывы</h2>
             <div class="reviews__slider swiper">
-              <h2 class="section-title reviews__title">Отзывы</h2>
               <div class="reviews__wrapper swiper-wrapper">
                 <div class="reviews__slide swiper-slide review-slide">
                   <div class="review-slide__wrapper">

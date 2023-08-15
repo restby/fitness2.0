@@ -3,12 +3,7 @@
 
   & img {
     width: 100%;
-    height: 228px;
     object-fit: cover;
-
-    @include vp-1199 {
-      height: 167px;
-    }
 
     @include vp-767 {
       height: 100%;

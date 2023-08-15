@@ -154,12 +154,15 @@
   top: 288px;
   left: 39.58%;
   width: 364px;
+  height: 228px;
 
   @include vp-1199 {
     top: 487px;
     left: 50%;
     transform: translateX(-50%);
-    width: 266px;
+    width: 35%;
+    height: auto;
+    // width: 266px;
   }
 
   @include vp-767 {
