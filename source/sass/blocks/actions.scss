@@ -255,6 +255,22 @@
     }
   }
 
+  @include active {
+    color: $text-dark;
+
+    &::after {
+      background-color: $text-dark;
+    }
+  }
+
+  &:active {
+    color: $text-dark;
+
+    &::after {
+      background-color: $text-dark;
+    }
+  }
+
   @include vp-767 {
     margin-left: 0;
     text-align: center;
@@ -275,6 +291,22 @@
 
   @include focus {
     border: 1px solid $text-light;
+  }
+
+  @include active {
+    color: $text-light;
+
+    &::after {
+      background-color: $color-default-white;
+    }
+  }
+
+  &:active {
+    color: $text-light;
+
+    &::after {
+      background-color: $color-default-white;
+    }
   }
 
   @include vp-767 {
