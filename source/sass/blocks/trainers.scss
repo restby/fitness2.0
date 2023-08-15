@@ -2,9 +2,6 @@
   padding-top: 106px;
   padding-bottom: 105px;
   position: relative;
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
 
   @include vp-1199 {
     padding-top: 100px;
@@ -17,19 +14,35 @@
   }
 }
 
-.trainers__slider {
+.trainers__container {
+  width: 100%;
+  max-width: 1366px;
   margin: 0 auto;
-  position: relative;
-  width: 1160px;
+  padding: 0 103px;
 
   @include vp-1199 {
-    width: 566px;
+    padding: 0 101px;
   }
 
   @include vp-767 {
-    width: 226px;
+    padding: 0 47px;
   }
 }
+
+.trainers__slider {
+  // width: 1160px;
+
+  @include vp-1199 {
+    // width: 566px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    // width: 226px;
+  }
+}
+
+.trainers__wrapper {}
 
 .trainers__title {
   margin-bottom: 48px;

@@ -9,7 +9,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <title>Фитнес 2.0</title>
     <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
@@ -278,137 +278,169 @@
           </div>
         </section>
         <section class="trainers">
-          <div class="trainers__slider swiper">
+          <div class="trainers__container">
             <h2 class="section-title trainers__title">Тренеры</h2>
-            <div class="trainers__wrapper swiper-wrapper">
-              <div class="trainers__slide swiper-slide slide">
-                <picture>
-                  <source type="image/webp" srcset="img/trainers/trainer-1.webp 1x, img/trainers/trainer-1@2x.webp 2x">
-                  <img src="img/trainers/trainer-1.jpg" srcset="img/trainers/trainer-1@2x.jpg 2x" alt="Анна Павлова">
-                </picture>
-                <p class="slide__name">Анна Павлова</p>
-                <div class="slide__text">
-                  <p class="slide__text-name">Анна Павлова</p>
-                  <span class="slide__text-descr">CrossFit</span>
-                  <ul class="slide__text-list">
-                    <li class="slide__text-item">Certified Level 3 Trainer</li>
-                    <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                  </ul>
+            <div class="trainers__slider swiper">
+              <div class="trainers__wrapper swiper-wrapper">
+                <div class="trainers__slide swiper-slide slide">
+                  <div class="slide__img-container">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="img/trainers/trainer-1.webp 1x, img/trainers/trainer-1@2x.webp 2x">
+                      <img src="img/trainers/trainer-1.jpg" srcset="img/trainers/trainer-1@2x.jpg 2x"
+                        alt="Анна Павлова">
+                    </picture>
+                  </div>
+                  <h3 class="slide__name">Анна Павлова</h3>
+                  <div class="slide__text">
+                    <h3 class="slide__text-name">Анна Павлова</h3>
+                    <span class="slide__text-descr">CrossFit</span>
+                    <ul class="slide__text-list">
+                      <li class="slide__text-item">Certified Level 3 Trainer</li>
+                      <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="trainers__slide swiper-slide slide">
-                <picture>
-                  <source type="image/webp" srcset="img/trainers/trainer-2.webp 1x, img/trainers/trainer-2@2x.webp 2x">
-                  <img src="img/trainers/trainer-2.jpg" srcset="img/trainers/trainer-2@2x.jpg 2x" alt="Алексей Лавров">
-                </picture>
-                <p class="slide__name">Алексей Лавров</p>
-                <div class="slide__text">
-                  <p class="slide__text-name">Алексей Лавров</p>
-                  <span class="slide__text-descr">CrossFit</span>
-                  <ul class="slide__text-list">
-                    <li class="slide__text-item">Certified Level 3 Trainer</li>
-                    <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                  </ul>
+                <div class="trainers__slide swiper-slide slide">
+                  <div class="slide__img-container">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="img/trainers/trainer-2.webp 1x, img/trainers/trainer-2@2x.webp 2x">
+                      <img src="img/trainers/trainer-2.jpg" srcset="img/trainers/trainer-2@2x.jpg 2x"
+                        alt="Алексей Лавров">
+                    </picture>
+                  </div>
+                  <h3 class="slide__name">Алексей Лавров</h3>
+                  <div class="slide__text">
+                    <h3 class="slide__text-name">Алексей Лавров</h3>
+                    <span class="slide__text-descr">CrossFit</span>
+                    <ul class="slide__text-list">
+                      <li class="slide__text-item">Certified Level 3 Trainer</li>
+                      <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="trainers__slide swiper-slide slide">
-                <picture>
-                  <source type="image/webp" srcset="img/trainers/trainer-3.webp 1x, img/trainers/trainer-3@2x.webp 2x">
-                  <img src="img/trainers/trainer-3.jpg" srcset="img/trainers/trainer-3@2x.jpg 2x"
-                    alt="Александр Пашков">
-                </picture>
-                <p class="slide__name">Александр Пашков</p>
-                <div class="slide__text">
-                  <p class="slide__text-name">Александр Пашков</p>
-                  <span class="slide__text-descr">CrossFit</span>
-                  <ul class="slide__text-list">
-                    <li class="slide__text-item">Certified Level 3 Trainer</li>
-                    <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                  </ul>
+                <div class="trainers__slide swiper-slide slide">
+                  <div class="slide__img-container">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="img/trainers/trainer-3.webp 1x, img/trainers/trainer-3@2x.webp 2x">
+                      <img src="img/trainers/trainer-3.jpg" srcset="img/trainers/trainer-3@2x.jpg 2x"
+                        alt="Александр Пашков">
+                    </picture>
+                  </div>
+                  <h3 class="slide__name">Александр Пашков</h3>
+                  <div class="slide__text">
+                    <h3 class="slide__text-name">Александр Пашков</h3>
+                    <span class="slide__text-descr">CrossFit</span>
+                    <ul class="slide__text-list">
+                      <li class="slide__text-item">Certified Level 3 Trainer</li>
+                      <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="trainers__slide swiper-slide slide">
-                <picture>
-                  <source type="image/webp" srcset="img/trainers/trainer-4.webp 1x, img/trainers/trainer-4@2x.webp 2x">
-                  <img src="img/trainers/trainer-4.jpg" srcset="img/trainers/trainer-4@2x.jpg 2x" alt="Мария Кетова">
-                </picture>
-                <p class="slide__name">Мария Кетова</p>
-                <div class="slide__text">
-                  <p class="slide__text-name">Мария Кетова</p>
-                  <span class="slide__text-descr">CrossFit</span>
-                  <ul class="slide__text-list">
-                    <li class="slide__text-item">Certified Level 3 Trainer</li>
-                    <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                  </ul>
+                <div class="trainers__slide swiper-slide slide">
+                  <div class="slide__img-container">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="img/trainers/trainer-4.webp 1x, img/trainers/trainer-4@2x.webp 2x">
+                      <img src="img/trainers/trainer-4.jpg" srcset="img/trainers/trainer-4@2x.jpg 2x"
+                        alt="Мария Кетова">
+                    </picture>
+                  </div>
+                  <h3 class="slide__name">Мария Кетова</h3>
+                  <div class="slide__text">
+                    <h3 class="slide__text-name">Мария Кетова</h3>
+                    <span class="slide__text-descr">CrossFit</span>
+                    <ul class="slide__text-list">
+                      <li class="slide__text-item">Certified Level 3 Trainer</li>
+                      <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="trainers__slide swiper-slide slide">
-                <picture>
-                  <source type="image/webp" srcset="img/trainers/trainer-1.webp 1x, img/trainers/trainer-1@2x.webp 2x">
-                  <img src="img/trainers/trainer-1.jpg" srcset="img/trainers/trainer-1@2x.jpg 2x" alt="Анна Павлова">
-                </picture>
-                <p class="slide__name">Анна Павлова</p>
-                <div class="slide__text">
-                  <p class="slide__text-name">Анна Павлова</p>
-                  <span class="slide__text-descr">CrossFit</span>
-                  <ul class="slide__text-list">
-                    <li class="slide__text-item">Certified Level 3 Trainer</li>
-                    <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                  </ul>
+                <div class="trainers__slide swiper-slide slide">
+                  <div class="slide__img-container">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="img/trainers/trainer-1.webp 1x, img/trainers/trainer-1@2x.webp 2x">
+                      <img src="img/trainers/trainer-1.jpg" srcset="img/trainers/trainer-1@2x.jpg 2x"
+                        alt="Анна Павлова">
+                    </picture>
+                  </div>
+                  <h3 class="slide__name">Анна Павлова</h3>
+                  <div class="slide__text">
+                    <h3 class="slide__text-name">Анна Павлова</h3>
+                    <span class="slide__text-descr">CrossFit</span>
+                    <ul class="slide__text-list">
+                      <li class="slide__text-item">Certified Level 3 Trainer</li>
+                      <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="trainers__slide swiper-slide slide">
-                <picture>
-                  <source type="image/webp" srcset="img/trainers/trainer-2.webp 1x, img/trainers/trainer-2@2x.webp 2x">
-                  <img src="img/trainers/trainer-2.jpg" srcset="img/trainers/trainer-2@2x.jpg 2x" alt="Алексей Лавров">
-                </picture>
-                <p class="slide__name">Алексей Лавров</p>
-                <div class="slide__text">
-                  <p class="slide__text-name">Алексей Лавров</p>
-                  <span class="slide__text-descr">CrossFit</span>
-                  <ul class="slide__text-list">
-                    <li class="slide__text-item">Certified Level 3 Trainer</li>
-                    <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                  </ul>
+                <div class="trainers__slide swiper-slide slide">
+                  <div class="slide__img-container">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="img/trainers/trainer-2.webp 1x, img/trainers/trainer-2@2x.webp 2x">
+                      <img src="img/trainers/trainer-2.jpg" srcset="img/trainers/trainer-2@2x.jpg 2x"
+                        alt="Алексей Лавров">
+                    </picture>
+                  </div>
+                  <h3 class="slide__name">Алексей Лавров</h3>
+                  <div class="slide__text">
+                    <h3 class="slide__text-name">Алексей Лавров</h3>
+                    <span class="slide__text-descr">CrossFit</span>
+                    <ul class="slide__text-list">
+                      <li class="slide__text-item">Certified Level 3 Trainer</li>
+                      <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="trainers__slide swiper-slide slide">
-                <picture>
-                  <source type="image/webp" srcset="img/trainers/trainer-3.webp 1x, img/trainers/trainer-3@2x.webp 2x">
-                  <img src="img/trainers/trainer-3.jpg" srcset="img/trainers/trainer-3@2x.jpg 2x"
-                    alt="Александр Пашков">
-                </picture>
-                <p class="slide__name">Александр Пашков</p>
-                <div class="slide__text">
-                  <p class="slide__text-name">Александр Пашков</p>
-                  <span class="slide__text-descr">CrossFit</span>
-                  <ul class="slide__text-list">
-                    <li class="slide__text-item">Certified Level 3 Trainer</li>
-                    <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                  </ul>
+                <div class="trainers__slide swiper-slide slide">
+                  <div class="slide__img-container">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="img/trainers/trainer-3.webp 1x, img/trainers/trainer-3@2x.webp 2x">
+                      <img src="img/trainers/trainer-3.jpg" srcset="img/trainers/trainer-3@2x.jpg 2x"
+                        alt="Александр Пашков">
+                    </picture>
+                  </div>
+                  <h3 class="slide__name">Александр Пашков</h3>
+                  <div class="slide__text">
+                    <h3 class="slide__text-name">Александр Пашков</h3>
+                    <span class="slide__text-descr">CrossFit</span>
+                    <ul class="slide__text-list">
+                      <li class="slide__text-item">Certified Level 3 Trainer</li>
+                      <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="trainers__slide swiper-slide slide">
-                <picture>
-                  <source type="image/webp" srcset="img/trainers/trainer-4.webp 1x, img/trainers/trainer-4@2x.webp 2x">
-                  <img src="img/trainers/trainer-4.jpg" srcset="img/trainers/trainer-4@2x.jpg 2x" alt="Мария Кетова">
-                </picture>
-                <p class="slide__name">Мария Кетова</p>
-                <div class="slide__text">
-                  <p class="slide__text-name">Мария Кетова</p>
-                  <span class="slide__text-descr">CrossFit</span>
-                  <ul class="slide__text-list">
-                    <li class="slide__text-item">Certified Level 3 Trainer</li>
-                    <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                  </ul>
+                <div class="trainers__slide swiper-slide slide">
+                  <div class="slide__img-container">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="img/trainers/trainer-4.webp 1x, img/trainers/trainer-4@2x.webp 2x">
+                      <img src="img/trainers/trainer-4.jpg" srcset="img/trainers/trainer-4@2x.jpg 2x"
+                        alt="Мария Кетова">
+                    </picture>
+                  </div>
+                  <h3 class="slide__name">Мария Кетова</h3>
+                  <div class="slide__text">
+                    <h3 class="slide__text-name">Мария Кетова</h3>
+                    <span class="slide__text-descr">CrossFit</span>
+                    <ul class="slide__text-list">
+                      <li class="slide__text-item">Certified Level 3 Trainer</li>
+                      <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
