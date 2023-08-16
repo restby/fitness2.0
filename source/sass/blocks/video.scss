@@ -74,24 +74,22 @@
       height: 73px;
     }
   }
-}
 
-.video__btn--hide {
-  display: none;
-}
-
-.video__btn {
   @include hover-focus {
     &::before {
       background-image: url("../../img/svg/video-btn-active.svg");
     }
-  }
 
-  @include active {
-    &::before {
-      background-image: url("../../img/svg/video-btn-active.svg");
+    @include active {
+      &::before {
+        background-image: url("../../img/svg/video-btn-active.svg");
+      }
     }
   }
+}
+
+.video__btn--hide {
+  display: none;
 }
 
 .video__btn:disabled::before {

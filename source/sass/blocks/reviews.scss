@@ -56,14 +56,6 @@
   }
 }
 
-.reviews__slide {
-  min-height: 242px;
-
-  @include vp-767 {
-    min-height: 335px;
-  }
-}
-
 .reviews__arrow {
   width: 56px;
   height: 56px;

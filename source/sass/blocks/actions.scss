@@ -4,7 +4,7 @@
 
   @include vp-1199 {
     padding-top: 91px;
-    padding-bottom: 100px;
+    padding-bottom: 101px;
   }
 
   @include vp-767 {
@@ -30,17 +30,42 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 40px;
+  row-gap: 30px;
 
-  @include vp-1199 {}
-
-  @include vp-767 {
+  @include vp-1199 {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
   }
 }
 
-.action__col {}
+.action__col {
+  &--main {
+    width: 560px;
+
+    @include vp-1199 {
+      width: 100%;
+    }
+  }
+
+  &--other {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+
+    @include vp-1199 {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @include vp-767 {
+      flex-direction: column;
+    }
+  }
+}
 
 .actions__item {
   background: linear-gradient(135deg, #d10a42 0%, #0041ca 100%);
@@ -49,13 +74,25 @@
   &--free {
     min-height: 211px;
 
-    @include vp-1199 {}
+    @include vp-1199 {
+      width: 47.79%;
+    }
+
+    @include vp-767 {
+      width: 100%;
+    }
   }
 
   &--discount {
     min-height: 211px;
 
-    @include vp-1199 {}
+    @include vp-1199 {
+      width: 47.79%;
+    }
+
+    @include vp-767 {
+      width: 100%;
+    }
   }
 }
 
@@ -63,8 +100,6 @@
   display: flex;
   padding: 0;
   background: none;
-
-  @include vp-1199 {}
 
   & .actions__item-title {
     color: $text-light;

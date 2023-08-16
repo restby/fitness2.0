@@ -171,16 +171,7 @@
   font-weight: 300;
   color: $text-light;
   left: 0;
-  top: 27px;
-
-  @include vp-1199 {
-    left: -3px;
-  }
-
-  @include vp-767 {
-    top: 70px;
-    left: 1px;
-  }
+  top: 32px;
 }
 
 .form__field .is-invalid {

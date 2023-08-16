@@ -36,15 +36,10 @@
 }
 
 .slide__img-container {
-  width: 260px;
+  width: 100%;
   height: 294px;
 
-  @include vp-1199 {
-    width: 268px;
-  }
-
   @include vp-767 {
-    width: 100%;
     height: 100%;
   }
 }
