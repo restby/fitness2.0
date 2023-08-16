@@ -158,10 +158,10 @@
 
     @include hover {
       opacity: 0.8;
-    }
 
-    &:active {
-      opacity: 0.3;
+      @include active {
+        opacity: 0.3;
+      }
     }
 
     @include vp-1199 {
@@ -180,10 +180,10 @@
 
     @include hover {
       opacity: 0.8;
-    }
 
-    &:active {
-      opacity: 0.3;
+      @include active {
+        opacity: 0.3;
+      }
     }
 
     @include vp-1199 {

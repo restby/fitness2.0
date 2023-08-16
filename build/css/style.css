@@ -1649,17 +1649,17 @@ button,
     color: #103aae;
     outline: none;
   }
+  .btn--on-dark:hover:not(.focus-visible):active {
+    background-color: #ffffff;
+    color: #102654;
+  }
 }
 .btn--on-dark.focus-visible:focus {
   background-color: #ffffff;
   color: #103aae;
   outline: none;
 }
-.btn--on-dark.focus-visible:active {
-  background-color: #ffffff;
-  color: #102654;
-}
-.btn--on-dark:active {
+.btn--on-dark.focus-visible:focus:active {
   background-color: #ffffff;
   color: #102654;
 }
@@ -1684,6 +1684,12 @@ button,
     border: none;
     outline: none;
   }
+  .btn--on-light:hover:not(.focus-visible):active {
+    background: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
+    background: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
+    color: #ffffff;
+    opacity: 0.7;
+  }
 }
 .btn--on-light.focus-visible:focus {
   background: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
@@ -1692,13 +1698,7 @@ button,
   border: none;
   outline: none;
 }
-.btn--on-light.focus-visible:active {
-  background: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
-  background: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
-  color: #ffffff;
-  opacity: 0.7;
-}
-.btn--on-light:active {
+.btn--on-light.focus-visible:focus:active {
   background: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
   background: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
   color: #ffffff;
@@ -2440,6 +2440,22 @@ button,
     max-width: 115px;
   }
 }
+@media (hover: hover) {
+  .page-header__tel:hover:not(.focus-visible) {
+    outline: none;
+    opacity: 0.8;
+  }
+  .page-header__tel:hover:not(.focus-visible):active {
+    opacity: 0.3;
+  }
+}
+.page-header__tel.focus-visible:focus {
+  outline: none;
+  opacity: 0.8;
+}
+.page-header__tel.focus-visible:focus:active {
+  opacity: 0.3;
+}
 
 .logo--header img {
   width: 122px;
@@ -2993,8 +3009,14 @@ button,
   display: none;
 }
 
-.video__btn:focus::before,
-.video__btn:hover::before,
+@media (hover: hover) {
+  .video__btn:hover:not(.focus-visible)::before {
+    background-image: url("../../img/svg/video-btn-active.svg");
+  }
+}
+.video__btn.focus-visible:focus::before {
+  background-image: url("../../img/svg/video-btn-active.svg");
+}
 .video__btn:active::before {
   background-image: url("../../img/svg/video-btn-active.svg");
 }
@@ -3854,15 +3876,21 @@ button,
   .trainers__arrow:hover:not(.focus-visible) {
     border: 1px solid #102654;
   }
+  .trainers__arrow:hover:not(.focus-visible):active {
+    background-color: #102654;
+  }
+  .trainers__arrow:hover:not(.focus-visible):active svg {
+    color: #ffffff;
+  }
 }
 .trainers__arrow.focus-visible:focus {
   border: 1px solid #102654;
 }
-.trainers__arrow.focus-visible:active {
+.trainers__arrow.focus-visible:focus:active {
   background-color: #102654;
 }
-.trainers__arrow:active {
-  background-color: #102654;
+.trainers__arrow.focus-visible:focus:active svg {
+  color: #ffffff;
 }
 
 .trainers__arrow svg {
@@ -3875,12 +3903,6 @@ button,
     width: 10px;
     height: 19px;
   }
-}
-.trainers__arrow svg:active {
-  color: #ffffff;
-}
-.trainers__arrow svg.focus-visible:active {
-  color: #ffffff;
 }
 
 .slide {
@@ -4760,6 +4782,13 @@ button,
   .actions__item-link:hover:not(.focus-visible) {
     opacity: 0.8;
   }
+  .actions__item-link:hover:not(.focus-visible):active {
+    opacity: 1;
+    color: #102654;
+  }
+  .actions__item-link:hover:not(.focus-visible):active::after {
+    background-color: #102654;
+  }
 }
 .actions__item-link.focus-visible:focus {
   outline: none;
@@ -4788,6 +4817,18 @@ button,
 }
 .actions__item-link--main::after {
   background-color: #ffffff;
+}
+@media (hover: hover) {
+  .actions__item-link--main:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+  .actions__item-link--main:hover:not(.focus-visible):active {
+    opacity: 1;
+    color: #ffffff;
+  }
+  .actions__item-link--main:hover:not(.focus-visible):active::after {
+    background-color: #ffffff;
+  }
 }
 .actions__item-link--main.focus-visible:focus {
   border: 1px solid #ffffff;
@@ -5250,15 +5291,21 @@ button,
   .reviews__arrow:hover:not(.focus-visible) {
     border: 1px solid #102654;
   }
+  .reviews__arrow:hover:not(.focus-visible):active {
+    background-color: #102654;
+  }
+  .reviews__arrow:hover:not(.focus-visible):active svg {
+    color: #ffffff;
+  }
 }
 .reviews__arrow.focus-visible:focus {
   border: 1px solid #102654;
 }
-.reviews__arrow.focus-visible:active {
+.reviews__arrow.focus-visible:focus:active {
   background-color: #102654;
 }
-.reviews__arrow:active {
-  background-color: #102654;
+.reviews__arrow.focus-visible:focus:active svg {
+  color: #ffffff;
 }
 
 .reviews__arrow svg {
@@ -5271,12 +5318,6 @@ button,
     width: 10px;
     height: 19px;
   }
-}
-.reviews__arrow svg:active {
-  color: #ffffff;
-}
-.reviews__arrow svg.focus-visible:active {
-  color: #ffffff;
 }
 
 .review-slide {
@@ -5511,16 +5552,16 @@ button,
     background-color: #ffffff;
     color: #103aae;
   }
+  .form button[type=submit]:hover:not(.focus-visible):active {
+    background-color: #ffffff;
+    color: #102654;
+  }
 }
 .form button[type=submit].focus-visible:focus {
   background-color: #ffffff;
   color: #103aae;
 }
-.form button[type=submit].focus-visible:active {
-  background-color: #ffffff;
-  color: #102654;
-}
-.form button[type=submit]:active {
+.form button[type=submit].focus-visible:focus:active {
   background-color: #ffffff;
   color: #102654;
 }
@@ -5628,14 +5669,14 @@ button,
     border-bottom: 1px solid #ffffff;
     outline: none;
   }
+  .form__field input:hover:not(.focus-visible):active {
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 1px solid #ffffff;
+    outline: none;
+  }
 }
 .form__field input.focus-visible:focus {
-  padding-left: 6px;
-  padding-right: 6px;
-  border: 1px solid #ffffff;
-  outline: none;
-}
-.form__field input.focus-visible:active {
   padding-left: 6px;
   padding-right: 6px;
   border: 1px solid #ffffff;
@@ -5875,9 +5916,9 @@ button,
   .contacts__item-text--phone:hover:not(.focus-visible) {
     opacity: 0.8;
   }
-}
-.contacts__item-text--phone:active {
-  opacity: 0.3;
+  .contacts__item-text--phone:hover:not(.focus-visible):active {
+    opacity: 0.3;
+  }
 }
 @media (max-width: 1199px) {
   .contacts__item-text--phone {
@@ -5898,9 +5939,9 @@ button,
   .contacts__item-text--email:hover:not(.focus-visible) {
     opacity: 0.8;
   }
-}
-.contacts__item-text--email:active {
-  opacity: 0.3;
+  .contacts__item-text--email:hover:not(.focus-visible):active {
+    opacity: 0.3;
+  }
 }
 @media (max-width: 1199px) {
   .contacts__item-text--email {
@@ -6079,6 +6120,7 @@ button,
   position: relative;
   padding: 5px 10px;
   position: relative;
+  border: 1px solid transparent;
 }
 .nav__link::after {
   position: absolute;
@@ -6099,9 +6141,16 @@ button,
   .nav__link:hover:not(.focus-visible)::after {
     background-color: #ffffff;
   }
+  .nav__link:hover:not(.focus-visible):active {
+    color: #ffffff;
+  }
+  .nav__link:hover:not(.focus-visible):active::after {
+    background-color: transparent;
+  }
 }
 .nav__link.focus-visible:focus {
   outline: none;
+  border: 1px solid #ffffff;
 }
 .nav__link--disabled {
   opacity: 0.4;
@@ -6160,6 +6209,12 @@ button,
   .social__link:hover:not(.focus-visible) svg {
     color: #ffffff;
   }
+  .social__link:hover:not(.focus-visible):active {
+    background-color: #102654;
+  }
+  .social__link:hover:not(.focus-visible):active svg {
+    color: #ffffff;
+  }
 }
 .social__link.focus-visible:focus {
   outline: none;
@@ -6168,16 +6223,10 @@ button,
 .social__link.focus-visible:focus svg {
   color: #ffffff;
 }
-.social__link.focus-visible:active {
+.social__link.focus-visible:focus:active {
   background-color: #102654;
 }
-.social__link.focus-visible:active svg {
-  color: #ffffff;
-}
-.social__link:active {
-  background-color: #102654;
-}
-.social__link:active svg {
+.social__link.focus-visible:focus:active svg {
   color: #ffffff;
 }
 .social__link--disabled {

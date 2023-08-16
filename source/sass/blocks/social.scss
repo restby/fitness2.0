@@ -36,21 +36,13 @@
     & svg {
       color: $text-light;
     }
-  }
 
-  @include active {
-    background-color: $stroke-dark;
+    @include active {
+      background-color: $stroke-dark;
 
-    & svg {
-      color: $text-light;
-    }
-  }
-
-  &:active {
-    background-color: $stroke-dark;
-
-    & svg {
-      color: $text-light;
+      & svg {
+        color: $text-light;
+      }
     }
   }
 

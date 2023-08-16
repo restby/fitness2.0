@@ -56,4 +56,13 @@
     letter-spacing: 0.4px;
     max-width: 115px;
   }
+
+  @include hover-focus {
+    outline: none;
+    opacity: 0.8;
+
+    @include active {
+      opacity: 0.3;
+    }
+  }
 }

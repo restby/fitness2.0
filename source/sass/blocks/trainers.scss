@@ -103,14 +103,14 @@
 
   @include hover-focus {
     border: 1px solid $stroke-dark;
-  }
 
-  @include active {
-    background-color: $stroke-dark;
-  }
+    @include active {
+      background-color: $stroke-dark;
 
-  &:active {
-    background-color: $stroke-dark;
+      & svg {
+        color: $color-default-white;
+      }
+    }
   }
 }
 
@@ -122,13 +122,5 @@
   @include vp-767 {
     width: 10px;
     height: 19px;
-  }
-
-  &:active {
-    color: $color-default-white;
-  }
-
-  @include active {
-    color: $color-default-white;
   }
 }

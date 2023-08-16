@@ -41,16 +41,11 @@
     @include hover-focus {
       background-color: $color-default-white;
       color: $text-action;
-    }
 
-    @include active {
-      background-color: $color-default-white;
-      color: $text-dark;
-    }
-
-    &:active {
-      background-color: $color-default-white;
-      color: $text-dark;
+      @include active {
+        background-color: $color-default-white;
+        color: $text-dark;
+      }
     }
 
     &:disabled {
@@ -139,16 +134,16 @@
   @include hover {
     border-bottom: 1px solid $color-default-white;
     outline: none;
+
+    @include active {
+      padding-left: 6px;
+      padding-right: 6px;
+      border: 1px solid $color-default-white;
+      outline: none;
+    }
   }
 
   @include focus {
-    padding-left: 6px;
-    padding-right: 6px;
-    border: 1px solid $color-default-white;
-    outline: none;
-  }
-
-  @include active {
     padding-left: 6px;
     padding-right: 6px;
     border: 1px solid $color-default-white;

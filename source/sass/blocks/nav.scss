@@ -78,6 +78,7 @@
   position: relative;
   padding: 5px 10px;
   position: relative;
+  border: 1px solid transparent;
 
   &::after {
     position: absolute;
@@ -98,26 +99,19 @@
     &::after {
       background-color: $color-default-white;
     }
+
+    @include active {
+      color: $text-light;
+
+      &::after {
+        background-color: transparent;
+      }
+    }
   }
 
   @include focus {
     outline: none;
-  }
-
-  @include active {
-    color: $text-light;
-
-    &::after {
-      background-color: transparent;
-    }
-  }
-
-  &:active {
-    color: $text-light;
-
-    &::after {
-      background-color: transparent;
-    }
+    border: 1px solid $color-default-white;
   }
 
   &--disabled {

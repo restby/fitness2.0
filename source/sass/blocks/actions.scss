@@ -244,6 +244,15 @@
 
   @include hover {
     opacity: 0.8;
+
+    @include active {
+      opacity: 1;
+      color: $text-dark;
+
+      &::after {
+        background-color: $text-dark;
+      }
+    }
   }
 
   @include focus {
@@ -252,22 +261,6 @@
 
     &::after {
       display: none;
-    }
-  }
-
-  @include active {
-    color: $text-dark;
-
-    &::after {
-      background-color: $text-dark;
-    }
-  }
-
-  &:active {
-    color: $text-dark;
-
-    &::after {
-      background-color: $text-dark;
     }
   }
 
@@ -289,24 +282,21 @@
     background-color: $color-default-white;
   }
 
+  @include hover {
+    opacity: 0.8;
+
+    @include active {
+      opacity: 1;
+      color: $text-light;
+
+      &::after {
+        background-color: $text-light;
+      }
+    }
+  }
+
   @include focus {
     border: 1px solid $text-light;
-  }
-
-  @include active {
-    color: $text-light;
-
-    &::after {
-      background-color: $color-default-white;
-    }
-  }
-
-  &:active {
-    color: $text-light;
-
-    &::after {
-      background-color: $color-default-white;
-    }
   }
 
   @include vp-767 {

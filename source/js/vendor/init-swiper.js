@@ -42,6 +42,7 @@ const initReviewsSlider = () => {
 
       loop: false,
       spaceBetween: 40,
+      autoHeight: true,
 
       navigation: {
         nextEl: '.reviews__arrow--next',

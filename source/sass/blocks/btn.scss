@@ -21,16 +21,11 @@
       background-color: $color-default-white;
       color: $text-action;
       outline: none;
-    }
 
-    @include active {
-      background-color: $color-default-white;
-      color: $text-dark;
-    }
-
-    &:active {
-      background-color: $color-default-white;
-      color: $text-dark;
+      @include active {
+        background-color: $color-default-white;
+        color: $text-dark;
+      }
     }
 
     &:disabled {
@@ -54,18 +49,12 @@
       color: $text-light;
       border: none;
       outline: none;
-    }
 
-    @include active {
-      background: $fill-gradient;
-      color: $text-light;
-      opacity: 0.7;
-    }
-
-    &:active {
-      background: $fill-gradient;
-      color: $text-light;
-      opacity: 0.7;
+      @include active {
+        background: $fill-gradient;
+        color: $text-light;
+        opacity: 0.7;
+      }
     }
 
     &:disabled {
