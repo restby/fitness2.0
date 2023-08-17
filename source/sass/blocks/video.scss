@@ -77,7 +77,7 @@
 
   @include hover-focus {
     &::before {
-      background-image: url("../../img/svg/video-btn-active.svg");
+      background-image: url("../../img/svg/video-btn-hover.svg");
     }
 
     @include active {

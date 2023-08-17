@@ -35,38 +35,23 @@
 
 .subs__tabs-controls {
   display: flex;
-  justify-content: center;
   column-gap: 46px;
   margin: 0 auto;
-  margin-bottom: 52px;
-  position: relative;
+  margin-bottom: 38px;
   flex-wrap: wrap;
-  max-width: 342px;
   row-gap: 30px;
+  padding-bottom: 11px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    transform: translateY(13px);
-    background-color: rgba(120, 120, 120, 0.2);
-
-    @include vp-767 {
-      transform: translateY(15px);
-    }
-  }
 
   @include vp-1199 {
-    margin-bottom: 57px;
+    margin-bottom: 45px;
     column-gap: 54px;
   }
 
   @include vp-767 {
     column-gap: 45px;
-    margin-bottom: 49px;
+    margin-bottom: 36px;
   }
 }
 
@@ -88,7 +73,7 @@
       content: "";
       width: 100%;
       height: 2px;
-      bottom: 0;
+      bottom: 2px;
       transform: translateY(13px);
       left: 0;
       background-color: #d10a42;

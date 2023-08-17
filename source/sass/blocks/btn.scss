@@ -9,9 +9,7 @@
   line-height: normal;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-
-  transition: background-color, border $trans-default;
-  // transition: background-color, border, color $trans-default;
+  transition: background-color, border, color $trans-default;
 
   &--on-dark {
     background-color: transparent;

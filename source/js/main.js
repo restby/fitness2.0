@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {play} from './modules/video-player';
 import {initTabs} from './modules/tabs/init-tabs';
+import {editInputsPlaceholder} from './modules/form-validate/form-fields';
 import {initAccordions} from './modules/accordion/init-accordion';
 import {initTrainersSlider, initReviewsSlider} from './vendor/init-swiper';
 // ---------------------------------
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   play();
   initTrainersSlider();
   initReviewsSlider();
+  editInputsPlaceholder();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
 

@@ -60,18 +60,27 @@
 }
 
 .faq__tabs-control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5px;
   min-height: 54px;
   border: 1px solid rgba(16, 38, 84, 0.2);
-
+  background-color: transparent;
+  color: $text-dark;
   font-size: 18px;
   font-weight: 400;
   line-height: 100%;
   text-transform: capitalize;
 
   &.is-active {
-    background: $fill-gradient;
+    background: $fill-tabs-gradient;
     color: $text-light;
-    opacity: 0.7;
+
+    @include hover-focus {
+      border: 1px solid transparent;
+    }
   }
 
   @include vp-1199 {
@@ -81,6 +90,17 @@
 
   @include vp-767 {
     min-height: 44px;
+  }
+
+  @include hover-focus {
+    outline: none;
+    border: 1px solid $stroke-dark;
+
+    @include active {
+      background: $fill-tabs-gradient;
+      color: $text-light;
+      border: 1px solid transparent;
+    }
   }
 }
 
