@@ -5348,6 +5348,7 @@ button,
   }
 
   .hero__title {
+    max-width: 173px;
     margin-bottom: 24px;
   }
 
