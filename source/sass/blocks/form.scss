@@ -148,6 +148,10 @@
     padding-right: 6px;
     border: 1px solid $color-default-white;
     outline: none;
+
+    &::placeholder {
+      color: transparent;
+    }
   }
 
   &:disabled {

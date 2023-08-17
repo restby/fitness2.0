@@ -1,4 +1,9 @@
 .logo {
+  &--header {
+    position: relative;
+    z-index: 1;
+  }
+
   &--header img {
     width: 122px;
     height: 44px;
@@ -26,6 +31,15 @@
     @include vp-767 {
       width: 68px;
       height: 15px;
+    }
+  }
+
+  @include hover-focus {
+    outline: none;
+    opacity: 0.8;
+
+    @include active {
+      opacity: 0.3;
     }
   }
 }
