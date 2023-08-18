@@ -2624,7 +2624,7 @@ button,
 .gym__container {
   position: relative;
   width: 100%;
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 0 103px;
 }
@@ -2889,6 +2889,8 @@ button,
   background: linear-gradient(135deg, #d10a42 0%, #0041ca 100%);
 }
 
+.card:focus,
+.card:focus-within,
 .card:hover {
   background: linear-gradient(135deg, #d10a42 0%, #0041ca 100%);
 }
@@ -2998,7 +3000,7 @@ button,
 
 .games {
   background-color: #ffffff;
-  padding-top: 119px;
+  padding-top: 120px;
   position: relative;
   z-index: 1;
 }
@@ -3064,6 +3066,7 @@ button,
   font-weight: 600;
   line-height: 96%;
   letter-spacing: 2.46px;
+  max-width: 201px;
 }
 
 .games__inner {
@@ -3530,7 +3533,7 @@ button,
 }
 
 .actions__title {
-  margin-bottom: 32px;
+  margin-bottom: 34px;
   text-align: center;
 }
 
@@ -3913,7 +3916,7 @@ button,
 
 .reviews {
   padding-top: 120px;
-  padding-bottom: 119px;
+  padding-bottom: 99px;
   position: relative;
 }
 
@@ -4085,17 +4088,13 @@ button,
   padding-top: 66px;
   padding-bottom: 66px;
   padding-left: 103px;
-  padding-right: 170px;
   min-height: 337px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .form form {
   width: 100%;
   max-width: 414px;
-  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4103,6 +4102,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-right: auto;
 }
 
 .form button[type=submit] {
@@ -4119,10 +4119,10 @@ button,
   justify-content: center;
   cursor: pointer;
   padding: 5px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.7px;
   text-transform: uppercase;
   -webkit-transition: background-color, border, color 0.3s ease;
   transition: background-color, border, color 0.3s ease;
@@ -4144,6 +4144,14 @@ button,
 .form button[type=submit]:disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+
+.form__wrapper {
+  width: 100%;
+  max-width: 582px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form__container {
@@ -4702,7 +4710,7 @@ button,
 
   .subs {
     padding-top: 101px;
-    padding-bottom: 100px;
+    padding-bottom: 98px;
   }
 
   .subs__title {
@@ -4781,6 +4789,7 @@ button,
     padding-left: 7px;
     font-size: 48px;
     letter-spacing: 1.44px;
+    max-width: 117px;
   }
 
   .games__label {
@@ -4843,6 +4852,7 @@ button,
 
   .trainers__container {
     padding: 0 101px;
+    max-width: 768px;
   }
 
   .trainers__slider {
@@ -5107,15 +5117,22 @@ button,
     flex: 0 1 100%;
   }
 
+  .form {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 131px;
+    padding-right: 161px;
+    padding-top: 62px;
+    min-height: 324px;
+  }
+
   .form form {
     max-width: 100%;
   }
 
-  .form {
-    padding-top: 62px;
-    padding-left: 132px;
-    padding-right: 160px;
-    min-height: 324px;
+  .form__wrapper {
+    max-width: 100%;
   }
 
   .form__container {
@@ -5544,6 +5561,20 @@ button,
     flex-direction: column;
   }
 
+  .games__col-inner {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .games__title {
+    margin-right: 26px;
+  }
+
+  .games__descr {
+    text-align: center;
+  }
+
   .trainers {
     padding-top: 63px;
     padding-bottom: 70px;
@@ -5869,7 +5900,7 @@ button,
 
   .reviews {
     padding-top: 63px;
-    padding-bottom: 69px;
+    padding-bottom: 70px;
   }
 
   .reviews__container {
@@ -5974,7 +6005,7 @@ button,
     -moz-column-gap: 0;
     column-gap: 0;
     row-gap: 33px;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 
   .form__title {

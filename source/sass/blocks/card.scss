@@ -6,6 +6,8 @@
     background: linear-gradient(135deg, #d10a42 0%, #0041ca 100%);
   }
 
+  &:focus,
+  &:focus-within,
   &:hover {
     background: linear-gradient(135deg, #d10a42 0%, #0041ca 100%);
   }

@@ -122,7 +122,7 @@
           <div class="container">
             <div class="subs__wrapper">
               <h2 class="subs__title section-title">Абонементы</h2>
-              <div class="subs__tabs" data-tabs="parent" data-delay="300" data-height="max">
+              <div class="subs__tabs" data-tabs="parent" data-delay="300">
                 <div class="subs__tabs-controls">
                   <button class="subs__tabs-control is-active" type="button" data-tabs="control">1
                     месяц</button>
@@ -286,9 +286,15 @@
         <section class="trainers">
           <div class="trainers__container">
             <h2 class="section-title trainers__title">Тренеры</h2>
+            <button class="trainers__arrow trainers__arrow--prev swiper-arrow swiper-button-prev" type="button"
+              aria-label="Предыдущий слайд.">
+              <svg width="16" height="32">
+                <use href="img/sprite.svg#icon-prev-arrow"></use>
+              </svg>
+            </button>
             <div class="trainers__slider swiper">
               <div class="trainers__wrapper swiper-wrapper">
-                <div class="trainers__slide swiper-slide slide">
+                <div class="trainers__slide swiper-slide slide" tabindex="0">
                   <div class="slide__img-container">
                     <picture>
                       <source type="image/webp"
@@ -308,7 +314,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="trainers__slide swiper-slide slide">
+                <div class="trainers__slide swiper-slide slide" tabindex="0">
                   <div class="slide__img-container">
                     <picture>
                       <source type="image/webp"
@@ -328,7 +334,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="trainers__slide swiper-slide slide">
+                <div class="trainers__slide swiper-slide slide" tabindex="0">
                   <div class="slide__img-container">
                     <picture>
                       <source type="image/webp"
@@ -348,87 +354,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="trainers__slide swiper-slide slide">
-                  <div class="slide__img-container">
-                    <picture>
-                      <source type="image/webp"
-                        srcset="img/trainers/trainer-4.webp 1x, img/trainers/trainer-4@2x.webp 2x">
-                      <img src="img/trainers/trainer-4.jpg" srcset="img/trainers/trainer-4@2x.jpg 2x"
-                        alt="Мария Кетова">
-                    </picture>
-                  </div>
-                  <h3 class="slide__name">Мария Кетова</h3>
-                  <div class="slide__text">
-                    <h3 class="slide__text-name">Мария Кетова</h3>
-                    <span class="slide__text-descr">CrossFit</span>
-                    <ul class="slide__text-list">
-                      <li class="slide__text-item">Certified Level 3 Trainer</li>
-                      <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                      <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="trainers__slide swiper-slide slide">
-                  <div class="slide__img-container">
-                    <picture>
-                      <source type="image/webp"
-                        srcset="img/trainers/trainer-1.webp 1x, img/trainers/trainer-1@2x.webp 2x">
-                      <img src="img/trainers/trainer-1.jpg" srcset="img/trainers/trainer-1@2x.jpg 2x"
-                        alt="Анна Павлова">
-                    </picture>
-                  </div>
-                  <h3 class="slide__name">Анна Павлова</h3>
-                  <div class="slide__text">
-                    <h3 class="slide__text-name">Анна Павлова</h3>
-                    <span class="slide__text-descr">CrossFit</span>
-                    <ul class="slide__text-list">
-                      <li class="slide__text-item">Certified Level 3 Trainer</li>
-                      <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                      <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="trainers__slide swiper-slide slide">
-                  <div class="slide__img-container">
-                    <picture>
-                      <source type="image/webp"
-                        srcset="img/trainers/trainer-2.webp 1x, img/trainers/trainer-2@2x.webp 2x">
-                      <img src="img/trainers/trainer-2.jpg" srcset="img/trainers/trainer-2@2x.jpg 2x"
-                        alt="Алексей Лавров">
-                    </picture>
-                  </div>
-                  <h3 class="slide__name">Алексей Лавров</h3>
-                  <div class="slide__text">
-                    <h3 class="slide__text-name">Алексей Лавров</h3>
-                    <span class="slide__text-descr">CrossFit</span>
-                    <ul class="slide__text-list">
-                      <li class="slide__text-item">Certified Level 3 Trainer</li>
-                      <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                      <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="trainers__slide swiper-slide slide">
-                  <div class="slide__img-container">
-                    <picture>
-                      <source type="image/webp"
-                        srcset="img/trainers/trainer-3.webp 1x, img/trainers/trainer-3@2x.webp 2x">
-                      <img src="img/trainers/trainer-3.jpg" srcset="img/trainers/trainer-3@2x.jpg 2x"
-                        alt="Александр Пашков">
-                    </picture>
-                  </div>
-                  <h3 class="slide__name">Александр Пашков</h3>
-                  <div class="slide__text">
-                    <h3 class="slide__text-name">Александр Пашков</h3>
-                    <span class="slide__text-descr">CrossFit</span>
-                    <ul class="slide__text-list">
-                      <li class="slide__text-item">Certified Level 3 Trainer</li>
-                      <li class="slide__text-item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                      <li class="slide__text-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="trainers__slide swiper-slide slide">
+                <div class="trainers__slide swiper-slide slide" tabindex="0">
                   <div class="slide__img-container">
                     <picture>
                       <source type="image/webp"
@@ -450,12 +376,6 @@
                 </div>
               </div>
             </div>
-            <button class="trainers__arrow trainers__arrow--prev swiper-arrow swiper-button-prev" type="button"
-              aria-label="Предыдущий слайд.">
-              <svg width="16" height="32">
-                <use href="img/sprite.svg#icon-prev-arrow"></use>
-              </svg>
-            </button>
             <button class="trainers__arrow trainers__arrow--next swiper-arrow swiper-button-next" type="button"
               aria-label="Следующий слайд.">
               <svg width="16" height="32">
@@ -642,7 +562,7 @@
                   </div>
 
                   <div class="faq__tabs-element" data-tabs="element" data-accordion="parent">
-                    <div class="faq__item is-active" data-accordion="element">
+                    <div class="faq__item" data-accordion="element">
                       <div class="faq__item-inner">
                         <h3 class="faq__item-title">Занятия с&nbsp;тренером входят в&nbsp;абонемент?</h3>
                         <button class="faq__item-button" type="button" data-accordion="button"
@@ -698,7 +618,7 @@
                   </div>
 
                   <div class="faq__tabs-element" data-tabs="element" data-accordion="parent">
-                    <div class="faq__item is-active" data-accordion="element">
+                    <div class="faq__item" data-accordion="element">
                       <div class="faq__item-inner">
                         <h3 class="faq__item-title">Предлагает&nbsp;ли клуб услуги
                           по&nbsp;консультированию
@@ -754,7 +674,7 @@
                   </div>
 
                   <div class="faq__tabs-element" data-tabs="element" data-accordion="parent">
-                    <div class="faq__item is-active" data-accordion="element">
+                    <div class="faq__item" data-accordion="element">
                       <div class="faq__item-inner">
                         <h3 class="faq__item-title">Занятия с&nbsp;тренером входят в&nbsp;абонемент?</h3>
                         <button class="faq__item-button" type="button" data-accordion="button"
@@ -867,10 +787,10 @@
 
         </section>
         <section class="freebie">
-          <div class="freebie__wrapper">
-            <div class="freebie__row">
-              <div class="freebie__col freebie__col--form form" data-form-validate="data-form-validate"
-                data-callback="base">
+          <div class="freebie__row">
+            <div class="freebie__col freebie__col--form form" data-form-validate="data-form-validate"
+              data-callback="base">
+              <div class="form__wrapper">
                 <form action="https://echo.htmlacademy.ru/" method="get">
                   <h2 class="section-title form__title">Бесплатное занятие</h2>
                   <div class="form__container">
@@ -892,30 +812,29 @@
                   <button type="submit">отправить</button>
                 </form>
               </div>
-              <div class="freebie__col freebie__col--contacts contacts">
-                <div class="contacts__container">
-                  <h2 class="section-title contacts__title">Контакты</h2>
-                  <ul class="contacts__list">
-                    <li class="contacts__item contacts__item--address">
-                      <h3 class="contacts__item-title">Адрес:</h3>
-                      <p class="contacts__item-text">г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
-                    </li>
-                    <li class="contacts__item contacts__item--phone">
-                      <h3 class="contacts__item-title">Телефон:</h3>
-                      <a class="contacts__item-text contacts__item-text--phone"
-                        href="tel:88005555555">8-800-555-55-55</a>
-                    </li>
-                    <li class="contacts__item contacts__item--schedule">
-                      <h3 class="contacts__item-title">График работы:</h3>
-                      <p class="contacts__item-text">Пн-Вс: с 8:00 до 22:00</p>
-                    </li>
-                    <li class="contacts__item contacts__item--email">
-                      <h3 class="contacts__item-title">Email:</h3>
-                      <a class="contacts__item-text contacts__item-text--email"
-                        href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-                    </li>
-                  </ul>
-                </div>
+            </div>
+            <div class="freebie__col freebie__col--contacts contacts">
+              <div class="contacts__container">
+                <h2 class="section-title contacts__title">Контакты</h2>
+                <ul class="contacts__list">
+                  <li class="contacts__item contacts__item--address">
+                    <h3 class="contacts__item-title">Адрес:</h3>
+                    <p class="contacts__item-text">г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
+                  </li>
+                  <li class="contacts__item contacts__item--phone">
+                    <h3 class="contacts__item-title">Телефон:</h3>
+                    <a class="contacts__item-text contacts__item-text--phone" href="tel:88005555555">8-800-555-55-55</a>
+                  </li>
+                  <li class="contacts__item contacts__item--schedule">
+                    <h3 class="contacts__item-title">График работы:</h3>
+                    <p class="contacts__item-text">Пн-Вс: с 8:00 до 22:00</p>
+                  </li>
+                  <li class="contacts__item contacts__item--email">
+                    <h3 class="contacts__item-title">Email:</h3>
+                    <a class="contacts__item-text contacts__item-text--email"
+                      href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

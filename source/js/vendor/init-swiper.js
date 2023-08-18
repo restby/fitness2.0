@@ -9,6 +9,7 @@ const initTrainersSlider = () => {
       watchOverflow: true,
       speed: 500,
       loop: true,
+      autoHeight: true,
       navigation: {
         nextEl: '.trainers__arrow--next',
         prevEl: '.trainers__arrow--prev',
