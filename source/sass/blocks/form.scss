@@ -73,6 +73,7 @@
   width: 100%;
   max-width: 582px;
   display: flex;
+  margin-left: auto;
 
   @include vp-1199 {
     max-width: 100%;
